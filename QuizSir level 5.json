@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyper Transfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": ["<a>", "<link>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "id": 3,
+    "question": "Which CSS property changes the text color?",
+    "options": ["font-color", "color", "text-color", "foreground"],
+    "answer": "color"
+  },
+  {
+    "id": 4,
+    "question": "Which CSS property controls the size of text?",
+    "options": ["font-style", "font-size", "text-size", "size"],
+    "answer": "font-size"
+  },
+  {
+    "id": 5,
+    "question": "Which language is primarily used for web page interactivity?",
+    "options": ["Python", "Java", "JavaScript", "PHP"],
+    "answer": "JavaScript"
+  },
+  {
+    "id": 6,
+    "question": "Which symbol is used for IDs in CSS?",
+    "options": [".", "#", "*", "&"],
+    "answer": "#"
+  },
+  {
+    "id": 7,
+    "question": "Which symbol is used for classes in CSS?",
+    "options": ["#", ".", "*", "+"],
+    "answer": "."
+  },
+  {
+    "id": 8,
+    "question": "Which HTML element is used to insert an image?",
+    "options": ["<picture>", "<image>", "<img>", "<src>"],
+    "answer": "<img>"
+  },
+  {
+    "id": 9,
+    "question": "What does CSS stand for?",
+    "options": [
+      "Computer Style Sheets",
+      "Creative Style System",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "id": 10,
+    "question": "Which HTML tag creates a paragraph?",
+    "options": ["<p>", "<para>", "<text>", "<paragraph>"],
+    "answer": "<p>"
+  },
+  {
+    "id": 11,
+    "question": "Which JavaScript keyword declares a block-scoped variable?",
+    "options": ["var", "let", "const", "both let and const"],
+    "answer": "both let and const"
+  },
+  {
+    "id": 12,
+    "question": "Which HTML tag is used for the largest heading?",
+    "options": ["<h6>", "<h3>", "<h1>", "<head>"],
+    "answer": "<h1>"
+  },
+  {
+    "id": 13,
+    "question": "Which method is used to print a message in the browser console?",
+    "options": [
+      "console.write()",
+      "console.log()",
+      "print()",
+      "echo()"
+    ],
+    "answer": "console.log()"
+  },
+  {
+    "id": 14,
+    "question": "Which CSS property makes text bold?",
+    "options": [
+      "font-weight",
+      "font-style",
+      "text-bold",
+      "weight"
+    ],
+    "answer": "font-weight"
+  },
+  {
+    "id": 15,
+    "question": "Which HTML attribute specifies an image source?",
+    "options": ["href", "src", "link", "path"],
+    "answer": "src"
+  },
+  {
+    "id": 16,
+    "question": "Which HTTP method retrieves data from a server?",
+    "options": ["POST", "PUT", "GET", "DELETE"],
+    "answer": "GET"
+  },
+  {
+    "id": 17,
+    "question": "Which HTTP method is commonly used to submit form data?",
+    "options": ["GET", "POST", "DELETE", "OPTIONS"],
+    "answer": "POST"
+  },
+  {
+    "id": 18,
+    "question": "Which CSS property adds space inside an element's border?",
+    "options": ["margin", "padding", "spacing", "border-space"],
+    "answer": "padding"
+  },
+  {
+    "id": 19,
+    "question": "Which CSS property adds space outside an element's border?",
+    "options": ["padding", "margin", "gap", "spacing"],
+    "answer": "margin"
+  },
+  {
+    "id": 20,
+    "question": "Which HTML tag creates an unordered list?",
+    "options": ["<ol>", "<ul>", "<li>", "<list>"],
+    "answer": "<ul>"
+  },
+  {
+    "id": 21,
+    "question": "Which HTML tag creates an ordered list?",
+    "options": ["<ol>", "<ul>", "<li>", "<list>"],
+    "answer": "<ol>"
+  },
+  {
+    "id": 22,
+    "question": "Which HTML tag represents a list item?",
+    "options": ["<item>", "<li>", "<list>", "<ul>"],
+    "answer": "<li>"
+  },
+  {
+    "id": 23,
+    "question": "Which CSS layout model is one-dimensional?",
+    "options": ["Grid", "Flexbox", "Table", "Float"],
+    "answer": "Flexbox"
+  },
+  {
+    "id": 24,
+    "question": "Which CSS layout model is two-dimensional?",
+    "options": ["Flexbox", "Float", "Grid", "Inline"],
+    "answer": "Grid"
+  },
+  {
+    "id": 25,
+    "question": "Which HTML element contains metadata about the document?",
+    "options": ["<body>", "<head>", "<meta>", "<header>"],
+    "answer": "<head>"
+  },
+  {
+    "id": 26,
+    "question": "What does DOM stand for?",
+    "options": [
+      "Document Object Model",
+      "Data Object Management",
+      "Digital Object Model",
+      "Document Orientation Mode"
+    ],
+    "answer": "Document Object Model"
+  },
+  {
+    "id": 27,
+    "question": "Which JavaScript function displays an alert box?",
+    "options": ["prompt()", "alert()", "confirm()", "console.log()"],
+    "answer": "alert()"
+  },
+  {
+    "id": 28,
+    "question": "Which JavaScript operator checks both value and type?",
+    "options": ["==", "=", "===", "!="],
+    "answer": "==="
+  },
+  {
+    "id": 29,
+    "question": "Which HTML5 element is used for navigation links?",
+    "options": ["<nav>", "<menu>", "<section>", "<aside>"],
+    "answer": "<nav>"
+  },
+  {
+    "id": 30,
+    "question": "Which HTML5 element is commonly used for the main content?",
+    "options": ["<main>", "<content>", "<section>", "<body>"],
+    "answer": "<main>"
+  },
+  {
+    "id": 31,
+    "question": "Which CSS property changes the background color?",
+    "options": [
+      "background",
+      "background-color",
+      "bg-color",
+      "color"
+    ],
+    "answer": "background-color"
+  },
+  {
+    "id": 32,
+    "question": "Which JavaScript method converts JSON text into an object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.decode()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "id": 33,
+    "question": "Which JavaScript method converts an object into a JSON string?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.encode()",
+      "JSON.object()"
+    ],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "id": 34,
+    "question": "Which HTML input type hides typed characters?",
+    "options": ["text", "password", "hidden", "secure"],
+    "answer": "password"
+  },
+  {
+    "id": 35,
+    "question": "Which CSS property controls the display behavior of an element?",
+    "options": ["position", "display", "visibility", "float"],
+    "answer": "display"
+  },
+  {
+    "id": 36,
+    "question": "Which value hides an element but keeps its space in the layout?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "opacity: 0",
+      "position: absolute"
+    ],
+    "answer": "visibility: hidden"
+  },
+  {
+    "id": 37,
+    "question": "Which HTML tag is used to create a table row?",
+    "options": ["<td>", "<tr>", "<th>", "<table>"],
+    "answer": "<tr>"
+  },
+  {
+    "id": 38,
+    "question": "Which HTML tag defines a table cell?",
+    "options": ["<td>", "<tr>", "<th>", "<cell>"],
+    "answer": "<td>"
+  },
+  {
+    "id": 39,
+    "question": "Which HTML tag defines a form?",
+    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
+    "answer": "<form>"
+  },
+  {
+    "id": 40,
+    "question": "Which JavaScript loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do...while", "for...of"],
+    "answer": "do...while"
+  },
+  {
+    "id": 41,
+    "question": "Which protocol is used to securely browse websites?",
+    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "answer": "HTTPS"
+  },
+  {
+    "id": 42,
+    "question": "Which HTML attribute provides alternative text for an image?",
+    "options": ["title", "alt", "description", "caption"],
+    "answer": "alt"
+  },
+  {
+    "id": 43,
+    "question": "Which CSS property rounds the corners of an element?",
+    "options": [
+      "border-style",
+      "border-radius",
+      "corner-radius",
+      "round"
+    ],
+    "answer": "border-radius"
+  },
+  {
+    "id": 44,
+    "question": "Which JavaScript event occurs when a button is clicked?",
+    "options": ["onhover", "onclick", "onfocus", "onchange"],
+    "answer": "onclick"
+  },
+  {
+    "id": 45,
+    "question": "Which HTML tag embeds JavaScript code?",
+    "options": ["<javascript>", "<script>", "<js>", "<code>"],
+    "answer": "<script>"
+  },
+  {
+    "id": 46,
+    "question": "Which CSS property specifies the stacking order of positioned elements?",
+    "options": ["layer", "stack", "z-index", "order"],
+    "answer": "z-index"
+  },
+  {
+    "id": 47,
+    "question": "Which HTML tag creates a line break?",
+    "options": ["<lb>", "<break>", "<br>", "<hr>"],
+    "answer": "<br>"
+  },
+  {
+    "id": 48,
+    "question": "Which HTML tag creates a horizontal rule?",
+    "options": ["<line>", "<rule>", "<hr>", "<br>"],
+    "answer": "<hr>"
+  },
+  {
+    "id": 49,
+    "question": "Which JavaScript function asks the user for input?",
+    "options": ["alert()", "confirm()", "prompt()", "input()"],
+    "answer": "prompt()"
+  },
+  {
+    "id": 50,
+    "question": "Which CSS property is used to make a website responsive on different screen sizes?",
+    "options": [
+      "@media",
+      "viewport",
+      "responsive",
+      "display"
+    ],
+    "answer": "@media"
+  }
+]
