@@ -1,0 +1,252 @@
+[
+  {
+    "q": "What is the capital of France?",
+    "a": ["Berlin", "Madrid", "Paris", "Rome"],
+    "correct": 2
+  },
+  {
+    "q": "How many continents are there on Earth?",
+    "a": ["5", "6", "7", "8"],
+    "correct": 2
+  },
+  {
+    "q": "Which planet is known as the Red Planet?",
+    "a": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "correct": 1
+  },
+  {
+    "q": "What is the largest ocean on Earth?",
+    "a": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correct": 3
+  },
+  {
+    "q": "Who painted the Mona Lisa?",
+    "a": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "correct": 2
+  },
+  {
+    "q": "What is the chemical symbol for water?",
+    "a": ["O2", "CO2", "H2O", "NaCl"],
+    "correct": 2
+  },
+  {
+    "q": "How many bones are there in the adult human body?",
+    "a": ["186", "206", "256", "306"],
+    "correct": 1
+  },
+  {
+    "q": "Which country is home to the kangaroo?",
+    "a": ["India", "South Africa", "Australia", "Brazil"],
+    "correct": 2
+  },
+  {
+    "q": "What is the fastest land animal?",
+    "a": ["Lion", "Cheetah", "Horse", "Elephant"],
+    "correct": 1
+  },
+  {
+    "q": "In which year did World War II end?",
+    "a": ["1943", "1944", "1945", "1946"],
+    "correct": 2
+  },
+  {
+    "q": "What is the hardest natural substance?",
+    "a": ["Gold", "Iron", "Diamond", "Quartz"],
+    "correct": 2
+  },
+  {
+    "q": "Which language has the most native speakers?",
+    "a": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
+    "correct": 2
+  },
+  {
+    "q": "How many colors are there in a rainbow?",
+    "a": ["5", "6", "7", "8"],
+    "correct": 2
+  },
+  {
+    "q": "What is the smallest country in the world?",
+    "a": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    "correct": 2
+  },
+  {
+    "q": "Who wrote 'Romeo and Juliet'?",
+    "a": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+    "correct": 1
+  },
+  {
+    "q": "What is the boiling point of water in Celsius?",
+    "a": ["90°C", "100°C", "110°C", "120°C"],
+    "correct": 1
+  },
+  {
+    "q": "Which gas do plants absorb from the atmosphere?",
+    "a": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correct": 2
+  },
+  {
+    "q": "What is the tallest mountain in the world?",
+    "a": ["K2", "Kangchenjunga", "Lhotse", "Mount Everest"],
+    "correct": 3
+  },
+  {
+    "q": "How many days are there in a leap year?",
+    "a": ["364", "365", "366", "367"],
+    "correct": 2
+  },
+  {
+    "q": "Which instrument measures earthquakes?",
+    "a": ["Thermometer", "Barometer", "Seismograph", "Hydrometer"],
+    "correct": 2
+  },
+  {
+    "q": "What is the currency of Japan?",
+    "a": ["Yuan", "Won", "Yen", "Ringgit"],
+    "correct": 2
+  },
+  {
+    "q": "Which element has the atomic number 1?",
+    "a": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+    "correct": 1
+  },
+  {
+    "q": "What is the largest desert in the world?",
+    "a": ["Sahara", "Arabian", "Gobi", "Antarctic Desert"],
+    "correct": 3
+  },
+  {
+    "q": "Who discovered penicillin?",
+    "a": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Edward Jenner"],
+    "correct": 1
+  },
+  {
+    "q": "What is the main ingredient in guacamole?",
+    "a": ["Tomato", "Avocado", "Onion", "Pepper"],
+    "correct": 1
+  },
+  {
+    "q": "How many strings does a standard guitar have?",
+    "a": ["4", "5", "6", "7"],
+    "correct": 2
+  },
+  {
+    "q": "Which ocean is the Bermuda Triangle located in?",
+    "a": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "correct": 1
+  },
+  {
+    "q": "What is the chemical symbol for gold?",
+    "a": ["Ag", "Au", "Fe", "Cu"],
+    "correct": 1
+  },
+  {
+    "q": "How many seconds are in an hour?",
+    "a": ["360", "3600", "36000", "60"],
+    "correct": 1
+  },
+  {
+    "q": "Which bird is known for its ability to mimic human speech?",
+    "a": ["Eagle", "Parrot", "Crow", "Pigeon"],
+    "correct": 1
+  },
+  {
+    "q": "What is the longest river in the world?",
+    "a": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "correct": 1
+  },
+  {
+    "q": "Who was the first person to walk on the moon?",
+    "a": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
+    "correct": 2
+  },
+  {
+    "q": "What is the name of the fairy in Peter Pan?",
+    "a": ["Cinderella", "Tinker Bell", "Ariel", "Belle"],
+    "correct": 1
+  },
+  {
+    "q": "Which sport is played at Wimbledon?",
+    "a": ["Cricket", "Tennis", "Golf", "Soccer"],
+    "correct": 1
+  },
+  {
+    "q": "What is the square root of 64?",
+    "a": ["6", "7", "8", "9"],
+    "correct": 2
+  },
+  {
+    "q": "Which country is the Eiffel Tower located in?",
+    "a": ["Italy", "Spain", "France", "Germany"],
+    "correct": 2
+  },
+  {
+    "q": "What type of animal is a dolphin?",
+    "a": ["Fish", "Amphibian", "Mammal", "Reptile"],
+    "correct": 2
+  },
+  {
+    "q": "How many players are there in a soccer team on the field?",
+    "a": ["9", "10", "11", "12"],
+    "correct": 2
+  },
+  {
+    "q": "What is the capital of Canada?",
+    "a": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correct": 3
+  },
+  {
+    "q": "Which fruit is known as the 'king of fruits'?",
+    "a": ["Apple", "Mango", "Durian", "Pineapple"],
+    "correct": 2
+  },
+  {
+    "q": "What is the largest planet in our solar system?",
+    "a": ["Earth", "Mars", "Saturn", "Jupiter"],
+    "correct": 3
+  },
+  {
+    "q": "What does 'www' stand for in a website URL?",
+    "a": ["World Wide Web", "Web Wide World", "World Web Wide", "Wide World Web"],
+    "correct": 0
+  },
+  {
+    "q": "How many hours are in a day?",
+    "a": ["12", "18", "24", "36"],
+    "correct": 2
+  },
+  {
+    "q": "Which animal is known as the 'Ship of the Desert'?",
+    "a": ["Horse", "Camel", "Donkey", "Elephant"],
+    "correct": 1
+  },
+  {
+    "q": "What is the hardest rock?",
+    "a": ["Marble", "Granite", "Diamond", "Basalt"],
+    "correct": 2
+  },
+  {
+    "q": "Who is the author of the Harry Potter series?",
+    "a": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "C.S. Lewis"],
+    "correct": 1
+  },
+  {
+    "q": "What is the freezing point of water in Fahrenheit?",
+    "a": ["0°F", "32°F", "100°F", "212°F"],
+    "correct": 1
+  },
+  {
+    "q": "Which country is known as the Land of the Rising Sun?",
+    "a": ["China", "South Korea", "Japan", "Thailand"],
+    "correct": 2
+  },
+  {
+    "q": "What is the largest mammal in the world?",
+    "a": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "correct": 1
+  },
+  {
+    "q": "How many sides does a hexagon have?",
+    "a": ["4", "5", "6", "7"],
+    "correct": 2
+  }
+]
