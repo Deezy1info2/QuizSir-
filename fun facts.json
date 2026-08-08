@@ -1,252 +1,262 @@
 [
   {
-    "q": "What is the capital of France?",
-    "a": ["Berlin", "Madrid", "Paris", "Rome"],
-    "correct": 2
-  },
-  {
-    "q": "How many continents are there on Earth?",
-    "a": ["5", "6", "7", "8"],
-    "correct": 2
-  },
-  {
-    "q": "Which planet is known as the Red Planet?",
-    "a": ["Venus", "Mars", "Jupiter", "Saturn"],
-    "correct": 1
-  },
-  {
-    "q": "What is the largest ocean on Earth?",
-    "a": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-    "correct": 3
-  },
-  {
-    "q": "Who painted the Mona Lisa?",
-    "a": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-    "correct": 2
-  },
-  {
-    "q": "What is the chemical symbol for water?",
-    "a": ["O2", "CO2", "H2O", "NaCl"],
-    "correct": 2
-  },
-  {
-    "q": "How many bones are there in the adult human body?",
-    "a": ["186", "206", "256", "306"],
-    "correct": 1
-  },
-  {
-    "q": "Which country is home to the kangaroo?",
-    "a": ["India", "South Africa", "Australia", "Brazil"],
-    "correct": 2
-  },
-  {
-    "q": "What is the fastest land animal?",
-    "a": ["Lion", "Cheetah", "Horse", "Elephant"],
-    "correct": 1
-  },
-  {
-    "q": "In which year did World War II end?",
-    "a": ["1943", "1944", "1945", "1946"],
-    "correct": 2
-  },
-  {
-    "q": "What is the hardest natural substance?",
-    "a": ["Gold", "Iron", "Diamond", "Quartz"],
-    "correct": 2
-  },
-  {
-    "q": "Which language has the most native speakers?",
-    "a": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
-    "correct": 2
-  },
-  {
-    "q": "How many colors are there in a rainbow?",
-    "a": ["5", "6", "7", "8"],
-    "correct": 2
-  },
-  {
-    "q": "What is the smallest country in the world?",
-    "a": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
-    "correct": 2
-  },
-  {
-    "q": "Who wrote 'Romeo and Juliet'?",
-    "a": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
-    "correct": 1
-  },
-  {
-    "q": "What is the boiling point of water in Celsius?",
-    "a": ["90°C", "100°C", "110°C", "120°C"],
-    "correct": 1
-  },
-  {
-    "q": "Which gas do plants absorb from the atmosphere?",
-    "a": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-    "correct": 2
-  },
-  {
-    "q": "What is the tallest mountain in the world?",
-    "a": ["K2", "Kangchenjunga", "Lhotse", "Mount Everest"],
-    "correct": 3
-  },
-  {
-    "q": "How many days are there in a leap year?",
-    "a": ["364", "365", "366", "367"],
-    "correct": 2
-  },
-  {
-    "q": "Which instrument measures earthquakes?",
-    "a": ["Thermometer", "Barometer", "Seismograph", "Hydrometer"],
-    "correct": 2
-  },
-  {
-    "q": "What is the currency of Japan?",
-    "a": ["Yuan", "Won", "Yen", "Ringgit"],
-    "correct": 2
-  },
-  {
-    "q": "Which element has the atomic number 1?",
-    "a": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-    "correct": 1
-  },
-  {
-    "q": "What is the largest desert in the world?",
-    "a": ["Sahara", "Arabian", "Gobi", "Antarctic Desert"],
-    "correct": 3
-  },
-  {
-    "q": "Who discovered penicillin?",
-    "a": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Edward Jenner"],
-    "correct": 1
-  },
-  {
-    "q": "What is the main ingredient in guacamole?",
-    "a": ["Tomato", "Avocado", "Onion", "Pepper"],
-    "correct": 1
-  },
-  {
-    "q": "How many strings does a standard guitar have?",
-    "a": ["4", "5", "6", "7"],
-    "correct": 2
-  },
-  {
-    "q": "Which ocean is the Bermuda Triangle located in?",
-    "a": ["Pacific", "Atlantic", "Indian", "Arctic"],
-    "correct": 1
-  },
-  {
-    "q": "What is the chemical symbol for gold?",
-    "a": ["Ag", "Au", "Fe", "Cu"],
-    "correct": 1
-  },
-  {
-    "q": "How many seconds are in an hour?",
-    "a": ["360", "3600", "36000", "60"],
-    "correct": 1
-  },
-  {
-    "q": "Which bird is known for its ability to mimic human speech?",
-    "a": ["Eagle", "Parrot", "Crow", "Pigeon"],
-    "correct": 1
-  },
-  {
-    "q": "What is the longest river in the world?",
-    "a": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-    "correct": 1
-  },
-  {
-    "q": "Who was the first person to walk on the moon?",
-    "a": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
-    "correct": 2
-  },
-  {
-    "q": "What is the name of the fairy in Peter Pan?",
-    "a": ["Cinderella", "Tinker Bell", "Ariel", "Belle"],
-    "correct": 1
-  },
-  {
-    "q": "Which sport is played at Wimbledon?",
-    "a": ["Cricket", "Tennis", "Golf", "Soccer"],
-    "correct": 1
-  },
-  {
-    "q": "What is the square root of 64?",
-    "a": ["6", "7", "8", "9"],
-    "correct": 2
-  },
-  {
-    "q": "Which country is the Eiffel Tower located in?",
-    "a": ["Italy", "Spain", "France", "Germany"],
-    "correct": 2
-  },
-  {
-    "q": "What type of animal is a dolphin?",
-    "a": ["Fish", "Amphibian", "Mammal", "Reptile"],
-    "correct": 2
-  },
-  {
-    "q": "How many players are there in a soccer team on the field?",
-    "a": ["9", "10", "11", "12"],
-    "correct": 2
-  },
-  {
-    "q": "What is the capital of Canada?",
-    "a": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
-    "correct": 3
-  },
-  {
-    "q": "Which fruit is known as the 'king of fruits'?",
-    "a": ["Apple", "Mango", "Durian", "Pineapple"],
-    "correct": 2
-  },
-  {
-    "q": "What is the largest planet in our solar system?",
-    "a": ["Earth", "Mars", "Saturn", "Jupiter"],
-    "correct": 3
-  },
-  {
-    "q": "What does 'www' stand for in a website URL?",
-    "a": ["World Wide Web", "Web Wide World", "World Web Wide", "Wide World Web"],
+    "q": "Octopuses have three hearts.",
+    "a": ["Two hearts pump blood to the gills, while the third pumps it to the rest of the body."],
     "correct": 0
   },
   {
-    "q": "How many hours are in a day?",
-    "a": ["12", "18", "24", "36"],
-    "correct": 2
+    "q": "Bananas are berries, but strawberries aren't.",
+    "a": ["Botanically, bananas qualify as berries, while strawberries are considered aggregate fruits."],
+    "correct": 0
   },
   {
-    "q": "Which animal is known as the 'Ship of the Desert'?",
-    "a": ["Horse", "Camel", "Donkey", "Elephant"],
-    "correct": 1
+    "q": "Honey can last for thousands of years.",
+    "a": ["Properly sealed honey can remain edible for an incredibly long time because it has very little water and is naturally acidic."],
+    "correct": 0
   },
   {
-    "q": "What is the hardest rock?",
-    "a": ["Marble", "Granite", "Diamond", "Basalt"],
-    "correct": 2
+    "q": "A group of flamingos is called a flamboyance.",
+    "a": ["The wonderfully colorful name 'flamboyance' is used for a group of flamingos."],
+    "correct": 0
   },
   {
-    "q": "Who is the author of the Harry Potter series?",
-    "a": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "C.S. Lewis"],
-    "correct": 1
+    "q": "Cows have best friends.",
+    "a": ["Studies have found that cows can form strong social bonds and may become stressed when separated from preferred companions."],
+    "correct": 0
   },
   {
-    "q": "What is the freezing point of water in Fahrenheit?",
-    "a": ["0°F", "32°F", "100°F", "212°F"],
-    "correct": 1
+    "q": "Butterflies taste with their feet.",
+    "a": ["Butterflies have taste receptors on their feet that help them identify plants."],
+    "correct": 0
   },
   {
-    "q": "Which country is known as the Land of the Rising Sun?",
-    "a": ["China", "South Korea", "Japan", "Thailand"],
-    "correct": 2
+    "q": "A snail can have thousands of tiny teeth.",
+    "a": ["Some snail species have thousands of microscopic teeth arranged on a tongue-like structure called a radula."],
+    "correct": 0
   },
   {
-    "q": "What is the largest mammal in the world?",
-    "a": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-    "correct": 1
+    "q": "Sharks are older than trees.",
+    "a": ["Shark ancestors existed hundreds of millions of years ago, before the first trees appeared on Earth."],
+    "correct": 0
   },
   {
-    "q": "How many sides does a hexagon have?",
-    "a": ["4", "5", "6", "7"],
-    "correct": 2
+    "q": "Wombat poop is cube-shaped.",
+    "a": ["Wombats produce distinctive cube-shaped droppings, which helps keep the droppings from rolling away."],
+    "correct": 0
+  },
+  {
+    "q": "Sea otters sometimes hold hands while sleeping.",
+    "a": ["Sea otters may hold paws while resting so they don't drift apart from each other."],
+    "correct": 0
+  },
+  {
+    "q": "Crows can recognize human faces.",
+    "a": ["Crows are remarkably intelligent and can remember and recognize individual human faces."],
+    "correct": 0
+  },
+  {
+    "q": "Elephants can communicate using sounds humans cannot hear.",
+    "a": ["Elephants use very low-frequency sounds called infrasound that can travel long distances."],
+    "correct": 0
+  },
+  {
+    "q": "Some turtles can breathe through their butts.",
+    "a": ["Certain aquatic turtles can absorb oxygen through specialized tissues near their rear end while underwater."],
+    "correct": 0
+  },
+  {
+    "q": "A day on Venus is longer than a year on Venus.",
+    "a": ["Venus rotates so slowly that one rotation takes longer than the time it takes Venus to orbit the Sun."],
+    "correct": 0
+  },
+  {
+    "q": "There are volcanoes on Mars.",
+    "a": ["Mars is home to Olympus Mons, the largest known volcano in the Solar System."],
+    "correct": 0
+  },
+  {
+    "q": "Space is completely silent.",
+    "a": ["Sound needs a medium such as air or water to travel, and most of space is an extremely good vacuum."],
+    "correct": 0
+  },
+  {
+    "q": "A cloud can weigh hundreds of tons.",
+    "a": ["Although clouds look light and fluffy, a large cloud can contain an enormous amount of water."],
+    "correct": 0
+  },
+  {
+    "q": "Lightning can be hotter than the surface of the Sun.",
+    "a": ["The air in a lightning channel can reach temperatures of around 30,000 kelvin, several times hotter than the Sun's surface."],
+    "correct": 0
+  },
+  {
+    "q": "The Moon is slowly moving away from Earth.",
+    "a": ["The Moon drifts away from Earth by roughly 3.8 centimeters per year because of tidal interactions."],
+    "correct": 0
+  },
+  {
+    "q": "A day on Earth is very slightly getting longer.",
+    "a": ["Earth's rotation is gradually slowing, mainly because of tidal effects caused by the Moon."],
+    "correct": 0
+  },
+  {
+    "q": "There are more possible chess games than atoms in the observable universe.",
+    "a": ["The number of possible chess game variations is unimaginably huge, often estimated to exceed the number of atoms in the observable universe."],
+    "correct": 0
+  },
+  {
+    "q": "Your stomach gets a new lining regularly.",
+    "a": ["The stomach constantly replaces much of its protective lining because its digestive acids are extremely powerful."],
+    "correct": 0
+  },
+  {
+    "q": "Your brain uses a surprising amount of energy.",
+    "a": ["Although the brain makes up only a small percentage of body weight, it uses roughly 20 percent of the body's energy at rest."],
+    "correct": 0
+  },
+  {
+    "q": "Humans share a surprising amount of DNA with other living things.",
+    "a": ["Humans share many genes with organisms such as yeast because living things inherit biological instructions from ancient common ancestors."],
+    "correct": 0
+  },
+  {
+    "q": "Your fingerprints are unique.",
+    "a": ["The patterns on your fingertips develop before birth and are highly distinctive to each person."],
+    "correct": 0
+  },
+  {
+    "q": "Your nose can detect an incredible number of smells.",
+    "a": ["The human sense of smell can distinguish a huge variety of different odors using specialized receptors in the nose."],
+    "correct": 0
+  },
+  {
+    "q": "Some people sneeze when they look at bright light.",
+    "a": ["This is called the photic sneeze reflex, and it affects a noticeable portion of the population."],
+    "correct": 0
+  },
+  {
+    "q": "Goats have rectangular pupils.",
+    "a": ["A goat's horizontal, rectangular pupils give it a wide field of view that helps it watch for predators."],
+    "correct": 0
+  },
+  {
+    "q": "Goats can climb surprisingly steep places.",
+    "a": ["Mountain goats have specialized hooves that help them balance on rocky and steep surfaces."],
+    "correct": 0
+  },
+  {
+    "q": "Penguins propose with pebbles.",
+    "a": ["Some penguins use carefully selected pebbles during courtship and nest building."],
+    "correct": 0
+  },
+  {
+    "q": "Ravens can solve puzzles.",
+    "a": ["Ravens are highly intelligent birds capable of problem-solving, planning, and using objects as tools."],
+    "correct": 0
+  },
+  {
+    "q": "Dolphins have names for each other.",
+    "a": ["Dolphins develop unique signature whistles that can function somewhat like individual names."],
+    "correct": 0
+  },
+  {
+    "q": "Some frogs can freeze and survive.",
+    "a": ["Wood frogs can survive having much of their bodies frozen during winter and then become active again when temperatures rise."],
+    "correct": 0
+  },
+  {
+    "q": "A group of crows is called a murder.",
+    "a": ["One traditional collective noun for crows is a 'murder,' making it one of the more unusual animal group names."],
+    "correct": 0
+  },
+  {
+    "q": "Pineapples take a long time to grow.",
+    "a": ["Depending on the variety and growing conditions, a pineapple plant can take well over a year to produce a mature fruit."],
+    "correct": 0
+  },
+  {
+    "q": "Carrots were originally not usually orange.",
+    "a": ["Early cultivated carrots came in colors such as purple, yellow, white, and red before orange varieties became especially popular."],
+    "correct": 0
+  },
+  {
+    "q": "Apples float in water.",
+    "a": ["Apples are less dense than water because roughly a quarter of their volume can be air."],
+    "correct": 0
+  },
+  {
+    "q": "A pineapple is made from many flowers.",
+    "a": ["What looks like one pineapple fruit actually develops from many individual flowers that fuse together."],
+    "correct": 0
+  },
+  {
+    "q": "Avocados are fruits.",
+    "a": ["Despite being commonly used in savory dishes, avocados are botanically fruits and contain a large seed."],
+    "correct": 0
+  },
+  {
+    "q": "Chocolate was once used as money.",
+    "a": ["The ancient Maya and Aztecs valued cacao beans so highly that they were sometimes used in trade and as a form of currency."],
+    "correct": 0
+  },
+  {
+    "q": "The Eiffel Tower can change height.",
+    "a": ["Because metal expands when heated, the Eiffel Tower can become noticeably taller during hot weather."],
+    "correct": 0
+  },
+  {
+    "q": "Oxford University is older than the Aztec Empire.",
+    "a": ["Teaching existed at Oxford centuries before the Aztec Empire was established in the early 14th century."],
+    "correct": 0
+  },
+  {
+    "q": "Cleopatra lived closer to the Moon landing than to the building of the Great Pyramid.",
+    "a": ["Cleopatra lived around 2,500 years after the Great Pyramid was built but only about 2,000 years before humans landed on the Moon."],
+    "correct": 0
+  },
+  {
+    "q": "The Great Wall of China is not one continuous wall.",
+    "a": ["It is actually a huge network of walls, fortifications, trenches, and other defensive structures built across different periods."],
+    "correct": 0
+  },
+  {
+    "q": "The Internet and the World Wide Web are not the same thing.",
+    "a": ["The Internet is the global network infrastructure, while the World Wide Web is a system of websites and webpages that operates on it."],
+    "correct": 0
+  },
+  {
+    "q": "The first computer mouse was made of wood.",
+    "a": ["The first computer mouse prototype, created by Douglas Engelbart's team, had a wooden casing."],
+    "correct": 0
+  },
+  {
+    "q": "A group of owls can be called a parliament.",
+    "a": ["'Parliament' is one of the traditional collective nouns used for a group of owls."],
+    "correct": 0
+  },
+  {
+    "q": "Koalas have fingerprints.",
+    "a": ["Koalas have fingerprints that can look surprisingly similar to human fingerprints."],
+    "correct": 0
+  },
+  {
+    "q": "Jellyfish existed before dinosaurs.",
+    "a": ["Jellyfish-like animals have existed for hundreds of millions of years, long before dinosaurs appeared."],
+    "correct": 0
+  },
+  {
+    "q": "Some cats have extra toes.",
+    "a": ["Cats with extra toes are called polydactyl cats, and the extra digits can make their paws look unusually large."],
+    "correct": 0
+  },
+  {
+    "q": "A blue whale's heart is enormous.",
+    "a": ["A blue whale's heart is one of the largest hearts in the animal kingdom and can weigh hundreds of kilograms."],
+    "correct": 0
+  },
+  {
+    "q": "Sloths can hold their breath for a surprisingly long time.",
+    "a": ["Sloths can slow their heart rate and remain underwater for around 40 minutes or more."],
+    "correct": 0
   }
 ]
