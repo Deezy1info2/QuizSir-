@@ -1,252 +1,252 @@
 [
   {
-    "q": "What is the capital of France?",
-    "a": ["Berlin", "Madrid", "Paris", "Rome"],
-    "correct": 2
-  },
-  {
-    "q": "How many continents are there on Earth?",
-    "a": ["5", "6", "7", "8"],
-    "correct": 2
-  },
-  {
-    "q": "Which planet is known as the Red Planet?",
-    "a": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "q": "What is the study of living organisms and their interactions with the environment called?",
+    "a": ["Geology", "Biology", "Astronomy", "Physics"],
     "correct": 1
   },
   {
-    "q": "What is the largest ocean on Earth?",
-    "a": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-    "correct": 3
-  },
-  {
-    "q": "Who painted the Mona Lisa?",
-    "a": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "q": "Which African nation was formerly known as Abyssinia?",
+    "a": ["Ghana", "Nigeria", "Ethiopia", "Kenya"],
     "correct": 2
   },
   {
-    "q": "What is the chemical symbol for water?",
-    "a": ["O2", "CO2", "H2O", "NaCl"],
-    "correct": 2
-  },
-  {
-    "q": "How many bones are there in the adult human body?",
-    "a": ["186", "206", "256", "306"],
-    "correct": 1
-  },
-  {
-    "q": "Which country is home to the kangaroo?",
-    "a": ["India", "South Africa", "Australia", "Brazil"],
-    "correct": 2
-  },
-  {
-    "q": "What is the fastest land animal?",
-    "a": ["Lion", "Cheetah", "Horse", "Elephant"],
-    "correct": 1
-  },
-  {
-    "q": "In which year did World War II end?",
-    "a": ["1943", "1944", "1945", "1946"],
-    "correct": 2
-  },
-  {
-    "q": "What is the hardest natural substance?",
-    "a": ["Gold", "Iron", "Diamond", "Quartz"],
-    "correct": 2
-  },
-  {
-    "q": "Which language has the most native speakers?",
-    "a": ["English", "Spanish", "Mandarin Chinese", "Hindi"],
-    "correct": 2
-  },
-  {
-    "q": "How many colors are there in a rainbow?",
-    "a": ["5", "6", "7", "8"],
-    "correct": 2
-  },
-  {
-    "q": "What is the smallest country in the world?",
-    "a": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
-    "correct": 2
-  },
-  {
-    "q": "Who wrote 'Romeo and Juliet'?",
-    "a": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
-    "correct": 1
-  },
-  {
-    "q": "What is the boiling point of water in Celsius?",
-    "a": ["90°C", "100°C", "110°C", "120°C"],
-    "correct": 1
-  },
-  {
-    "q": "Which gas do plants absorb from the atmosphere?",
-    "a": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-    "correct": 2
-  },
-  {
-    "q": "What is the tallest mountain in the world?",
-    "a": ["K2", "Kangchenjunga", "Lhotse", "Mount Everest"],
-    "correct": 3
-  },
-  {
-    "q": "How many days are there in a leap year?",
-    "a": ["364", "365", "366", "367"],
-    "correct": 2
-  },
-  {
-    "q": "Which instrument measures earthquakes?",
-    "a": ["Thermometer", "Barometer", "Seismograph", "Hydrometer"],
-    "correct": 2
-  },
-  {
-    "q": "What is the currency of Japan?",
-    "a": ["Yuan", "Won", "Yen", "Ringgit"],
-    "correct": 2
-  },
-  {
-    "q": "Which element has the atomic number 1?",
-    "a": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-    "correct": 1
-  },
-  {
-    "q": "What is the largest desert in the world?",
-    "a": ["Sahara", "Arabian", "Gobi", "Antarctic Desert"],
-    "correct": 3
-  },
-  {
-    "q": "Who discovered penicillin?",
-    "a": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Edward Jenner"],
-    "correct": 1
-  },
-  {
-    "q": "What is the main ingredient in guacamole?",
-    "a": ["Tomato", "Avocado", "Onion", "Pepper"],
-    "correct": 1
-  },
-  {
-    "q": "How many strings does a standard guitar have?",
-    "a": ["4", "5", "6", "7"],
-    "correct": 2
-  },
-  {
-    "q": "Which ocean is the Bermuda Triangle located in?",
-    "a": ["Pacific", "Atlantic", "Indian", "Arctic"],
-    "correct": 1
-  },
-  {
-    "q": "What is the chemical symbol for gold?",
-    "a": ["Ag", "Au", "Fe", "Cu"],
-    "correct": 1
-  },
-  {
-    "q": "How many seconds are in an hour?",
-    "a": ["360", "3600", "36000", "60"],
-    "correct": 1
-  },
-  {
-    "q": "Which bird is known for its ability to mimic human speech?",
-    "a": ["Eagle", "Parrot", "Crow", "Pigeon"],
-    "correct": 1
-  },
-  {
-    "q": "What is the longest river in the world?",
-    "a": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-    "correct": 1
-  },
-  {
-    "q": "Who was the first person to walk on the moon?",
-    "a": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
-    "correct": 2
-  },
-  {
-    "q": "What is the name of the fairy in Peter Pan?",
-    "a": ["Cinderella", "Tinker Bell", "Ariel", "Belle"],
-    "correct": 1
-  },
-  {
-    "q": "Which sport is played at Wimbledon?",
-    "a": ["Cricket", "Tennis", "Golf", "Soccer"],
-    "correct": 1
-  },
-  {
-    "q": "What is the square root of 64?",
-    "a": ["6", "7", "8", "9"],
-    "correct": 2
-  },
-  {
-    "q": "Which country is the Eiffel Tower located in?",
-    "a": ["Italy", "Spain", "France", "Germany"],
-    "correct": 2
-  },
-  {
-    "q": "What type of animal is a dolphin?",
-    "a": ["Fish", "Amphibian", "Mammal", "Reptile"],
-    "correct": 2
-  },
-  {
-    "q": "How many players are there in a soccer team on the field?",
-    "a": ["9", "10", "11", "12"],
-    "correct": 2
-  },
-  {
-    "q": "What is the capital of Canada?",
-    "a": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
-    "correct": 3
-  },
-  {
-    "q": "Which fruit is known as the 'king of fruits'?",
-    "a": ["Apple", "Mango", "Durian", "Pineapple"],
-    "correct": 2
-  },
-  {
-    "q": "What is the largest planet in our solar system?",
-    "a": ["Earth", "Mars", "Saturn", "Jupiter"],
-    "correct": 3
-  },
-  {
-    "q": "What does 'www' stand for in a website URL?",
-    "a": ["World Wide Web", "Web Wide World", "World Web Wide", "Wide World Web"],
+    "q": "In computer networking, what does IP stand for in 'IP Address'?",
+    "a": ["Internet Protocol", "Internal Process", "Information Path", "Interface Provider"],
     "correct": 0
   },
   {
-    "q": "How many hours are in a day?",
-    "a": ["12", "18", "24", "36"],
+    "q": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
+    "a": ["13 cm", "26 cm", "40 cm", "30 cm"],
+    "correct": 1
+  },
+  {
+    "q": "Which gas makes up roughly 78% of Earth's atmosphere?",
+    "a": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
     "correct": 2
   },
   {
-    "q": "Which animal is known as the 'Ship of the Desert'?",
-    "a": ["Horse", "Camel", "Donkey", "Elephant"],
+    "q": "Who wrote the famous classic novel 'Things Fall Apart'?",
+    "a": ["Wole Soyinka", "Chinua Achebe", "Ngũgĩ wa Thiong'o", "Ben Okri"],
     "correct": 1
   },
   {
-    "q": "What is the hardest rock?",
-    "a": ["Marble", "Granite", "Diamond", "Basalt"],
+    "q": "What is the capital city of Australia?",
+    "a": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
     "correct": 2
   },
   {
-    "q": "Who is the author of the Harry Potter series?",
-    "a": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "C.S. Lewis"],
+    "q": "In Economics, what law states that as price increases, quantity supplied increases?",
+    "a": ["Law of Demand", "Law of Supply", "Law of Diminishing Returns", "Law of Inflation"],
     "correct": 1
   },
   {
-    "q": "What is the freezing point of water in Fahrenheit?",
-    "a": ["0°F", "32°F", "100°F", "212°F"],
-    "correct": 1
-  },
-  {
-    "q": "Which country is known as the Land of the Rising Sun?",
-    "a": ["China", "South Korea", "Japan", "Thailand"],
+    "q": "Which force pulls objects toward the center of the Earth?",
+    "a": ["Friction", "Magnetism", "Gravity", "Tension"],
     "correct": 2
   },
   {
-    "q": "What is the largest mammal in the world?",
-    "a": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "q": "What is the primary language spoken in Argentina?",
+    "a": ["Portuguese", "Spanish", "Italian", "English"],
     "correct": 1
   },
   {
-    "q": "How many sides does a hexagon have?",
-    "a": ["4", "5", "6", "7"],
+    "q": "In basic chemistry, what pH value represents a neutral substance like pure water?",
+    "a": ["0", "5", "7", "14"],
+    "correct": 2
+  },
+  {
+    "q": "Which device in a computer holds long-term data even when powered off?",
+    "a": ["RAM", "Hard Drive / SSD", "CPU", "Cache"],
+    "correct": 1
+  },
+  {
+    "q": "Who was the first President of independent Ghana?",
+    "a": ["Kwame Nkrumah", "J.B. Danquah", "Jerry Rawlings", "Kofi Annan"],
+    "correct": 0
+  },
+  {
+    "q": "What is the value of 7 squared (7²)?",
+    "a": ["14", "28", "42", "49"],
+    "correct": 3
+  },
+  {
+    "q": "Which human organ is primarily responsible for filtering waste from blood to produce urine?",
+    "a": ["Liver", "Pancreas", "Kidneys", "Spleen"],
+    "correct": 2
+  },
+  {
+    "q": "What branch of Mathematics uses letters and symbols to represent unknown numbers in equations?",
+    "a": ["Geometry", "Algebra", "Calculus", "Statistics"],
+    "correct": 1
+  },
+  {
+    "q": "Which sea is located between Europe and Africa?",
+    "a": ["Red Sea", "Caribbean Sea", "Mediterranean Sea", "Baltic Sea"],
+    "correct": 2
+  },
+  {
+    "q": "In Web Development, which language is used to style and format HTML elements?",
+    "a": ["Python", "CSS", "SQL", "Java"],
+    "correct": 1
+  },
+  {
+    "q": "What is the process by which liquid water turns into water vapor due to heat?",
+    "a": ["Condensation", "Evaporation", "Precipitation", "Sublimation"],
+    "correct": 1
+  },
+  {
+    "q": "Which ancient civilization built the Colosseum in Italy?",
+    "a": ["Greeks", "Romans", "Egyptians", "Persians"],
+    "correct": 1
+  },
+  {
+    "q": "What is the chemical symbol for Sodium on the periodic table?",
+    "a": ["So", "Na", "Sd", "K"],
+    "correct": 1
+  },
+  {
+    "q": "Which instrument uses keys and hammers striking steel strings to produce sound?",
+    "a": ["Violin", "Flute", "Piano", "Guitar"],
+    "correct": 2
+  },
+  {
+    "q": "What is the capital city of Kenya?",
+    "a": ["Mombasa", "Nairobi", "Kisumu", "Kampala"],
+    "correct": 1
+  },
+  {
+    "q": "In English Grammar, what part of speech modifies or describes a verb, adjective, or another adverb?",
+    "a": ["Noun", "Pronoun", "Adjective", "Adverb"],
+    "correct": 3
+  },
+  {
+    "q": "What is the main function of red blood cells in the human body?",
+    "a": ["Fight infection", "Carry oxygen", "Clot blood", "Digest food"],
+    "correct": 1
+  },
+  {
+    "q": "Which planet in our solar system is famous for its bright, prominent ring system?",
+    "a": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correct": 1
+  },
+  {
+    "q": "What mathematical constant is defined as the ratio of a circle's circumference to its diameter?",
+    "a": ["Euler's Number (e)", "Pi (π)", "Golden Ratio (φ)", "Sigma (Σ)"],
+    "correct": 1
+  },
+  {
+    "q": "Which country won the FIFA World Cup in 2022?",
+    "a": ["France", "Brazil", "Argentina", "Germany"],
+    "correct": 2
+  },
+  {
+    "q": "In physics, what unit is used to measure electrical current?",
+    "a": ["Volt", "Ampere", "Watt", "Ohm"],
+    "correct": 1
+  },
+  {
+    "q": "Who wrote the play 'Hamlet'?",
+    "a": ["William Shakespeare", "George Bernard Shaw", "Oscar Wilde", "John Milton"],
+    "correct": 0
+  },
+  {
+    "q": "What is the longest mountain range above sea level on Earth?",
+    "a": ["Himalayas", "Rockies", "Andes", "Alps"],
+    "correct": 2
+  },
+  {
+    "q": "Which continent is the least populated in the world?",
+    "a": ["Australia", "Antarctica", "Europe", "South America"],
+    "correct": 1
+  },
+  {
+    "q": "What type of energy is stored in an object due to its position or height?",
+    "a": ["Kinetic Energy", "Potential Energy", "Thermal Energy", "Nuclear Energy"],
+    "correct": 1
+  },
+  {
+    "q": "In database systems, what query language is used to manage relational data?",
+    "a": ["HTML", "SQL", "C++", "PHP"],
+    "correct": 1
+  },
+  {
+    "q": "Which organ in the human body produces insulin?",
+    "a": ["Liver", "Kidney", "Pancreas", "Stomach"],
+    "correct": 2
+  },
+  {
+    "q": "What is the sum of angles inside a simple quadrilateral (4-sided polygon)?",
+    "a": ["180°", "270°", "360°", "540°"],
+    "correct": 2
+  },
+  {
+    "q": "Who painted the famous ceiling of the Sistine Chapel?",
+    "a": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Donatello"],
+    "correct": 2
+  },
+  {
+    "q": "Which island nation is located directly off the southeastern coast of mainland Africa?",
+    "a": ["Madagascar", "Seychelles", "Mauritius", "Cape Verde"],
+    "correct": 0
+  },
+  {
+    "q": "In financial literacy, what is the term for money paid regularly at a particular rate for the use of borrowed money?",
+    "a": ["Principal", "Interest", "Dividend", "Equity"],
+    "correct": 1
+  },
+  {
+    "q": "What is the chemical symbol for Iron?",
+    "a": ["Ir", "Fe", "In", "Au"],
+    "correct": 1
+  },
+  {
+    "q": "Which layer of the Earth lies directly beneath the outer crust?",
+    "a": ["Inner Core", "Outer Core", "Mantle", "Lithosphere"],
+    "correct": 2
+  },
+  {
+    "q": "What is the mean (average) of the numbers 10, 15, and 20?",
+    "a": ["12", "15", "18", "20"],
+    "correct": 1
+  },
+  {
+    "q": "Which world leader delivered the famous 'I Have a Dream' speech in 1963?",
+    "a": ["Nelson Mandela", "Malcolm X", "Martin Luther King Jr.", "Barack Obama"],
+    "correct": 2
+  },
+  {
+    "q": "What type of lens is thicker in the middle than at the edges and converges light rays?",
+    "a": ["Concave", "Convex", "Flat", "Cylindrical"],
+    "correct": 1
+  },
+  {
+    "q": "In computer science, what is a step-by-step procedure or set of rules for solving a problem called?",
+    "a": ["Algorithm", "Variable", "Compiler", "Syntax"],
+    "correct": 0
+  },
+  {
+    "q": "What is the largest country in the world by total land area?",
+    "a": ["China", "Canada", "United States", "Russia"],
+    "correct": 3
+  },
+  {
+    "q": "Which subatomic particle carries a negative electrical charge?",
+    "a": ["Proton", "Neutron", "Electron", "Positron"],
+    "correct": 2
+  },
+  {
+    "q": "What is the capital city of Japan?",
+    "a": ["Kyoto", "Osaka", "Tokyo", "Hiroshima"],
+    "correct": 2
+  },
+  {
+    "q": "How many states make up the Federal Republic of Nigeria?",
+    "a": ["30", "32", "36", "40"],
+    "correct": 2
+  },
+  {
+    "q": "What branch of Science studies stars, planets, galaxies, and outer space?",
+    "a": ["Meteorology", "Astrology", "Astronomy", "Geology"],
     "correct": 2
   }
 ]
