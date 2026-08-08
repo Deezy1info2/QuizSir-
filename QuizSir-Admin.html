@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QuizSir — Admin Console</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #080b12;
+            --surface: #0f1420;
+            --surface-card: #151c2c;
+            --surface-hover: #1c2538;
+            --border: #243049;
+            --border-soft: #2e3b55;
+            --primary: #6366f1;
+            --primary-deep: #4f46e5;
+            --primary-glow: rgba(99, 102, 241, 0.22);
+            --accent: #06b6d4;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text: #f1f5f9;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --radius: 16px;
+            --shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+            --font: 'Outfit', sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font);
+            background:
+                radial-gradient(ellipse 80% 50% at 10% -10%, rgba(99, 102, 241, 0.18), transparent 50%),
+                radial-gradient(ellipse 60% 40% at 100% 0%, rgba(6, 182, 212, 0.1), transparent 45%),
+                var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding-bottom: 120px;
+        }
+        .top-navbar {
+            background: rgba(15, 20, 32, 0.9);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            position: sticky; top: 0; z-index: 100;
+            padding: 14px 20px;
+        }
+        .nav-container {
+            max-width: 1360px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;
+        }
+        .brand-logo { display: flex; align-items: center; gap: 12px; }
+        .logo-box {
+            width: 44px; height: 44px; border-radius: 14px; overflow: hidden;
+            border: 1.5px solid rgba(99, 102, 241, 0.35);
+            box-shadow: 0 6px 18px var(--primary-glow); flex-shrink: 0;
+            background: linear-gradient(135deg, #6366f1, #06b6d4);
+        }
+        .logo-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .brand-title h1 {
+            font-size: 1.2rem; font-weight: 800; letter-spacing: -0.4px; line-height: 1.15;
+            background: linear-gradient(135deg, #a5b4fc, #67e8f9);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .brand-title span {
+            font-size: 0.7rem; color: var(--accent); font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1.2px;
+        }
+        .header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .sync-meta {
+            font-size: 0.72rem; color: var(--text-dim); font-weight: 600;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .sync-meta .live-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--success); box-shadow: 0 0 8px var(--success);
+            animation: pulse 1.6s ease infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.45; }
+        }
+        .btn {
+            padding: 11px 16px; border-radius: 12px; font-size: 0.86rem; font-weight: 700;
+            font-family: var(--font); cursor: pointer; border: 1px solid transparent;
+            transition: 0.2s ease; display: inline-flex; align-items: center; justify-content: center;
+            gap: 8px; white-space: nowrap;
+        }
+        .btn-secondary { background: var(--surface-card); border-color: var(--border); color: var(--text); }
+        .btn-secondary:hover { background: var(--surface-hover); border-color: var(--border-soft); }
+        .btn-publish {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff; box-shadow: 0 6px 18px rgba(16, 185, 129, 0.3);
+        }
+        .btn-publish:hover { transform: translateY(-1px); opacity: 0.96; }
+        .btn-danger-outline {
+            background: transparent; border-color: rgba(239, 68, 68, 0.45); color: var(--danger);
+        }
+        .btn-danger-outline:hover { background: rgba(239, 68, 68, 0.1); }
+        .btn-icon {
+            width: 34px; height: 34px; padding: 0; border-radius: 10px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.35);
+            color: var(--danger); cursor: pointer;
+            display: inline-flex; align-items: center; justify-content: center;
+            transition: 0.2s ease; font-size: 0.82rem;
+        }
+        .btn-icon:hover { background: rgba(239, 68, 68, 0.18); transform: translateY(-1px); }
+        .btn-icon:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+        .page-hero {
+            display: flex; justify-content: space-between; align-items: flex-end;
+            gap: 12px; flex-wrap: wrap; margin-bottom: 4px;
+        }
+        .page-hero h2 {
+            font-size: 1.15rem; font-weight: 800; letter-spacing: -0.3px;
+        }
+        .page-hero p {
+            font-size: 0.82rem; color: var(--text-muted); font-weight: 500; margin-top: 4px;
+        }
+        .section-label {
+            font-size: 0.72rem; font-weight: 800; color: var(--text-dim);
+            text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 2px;
+        }
+
+        .main-wrapper {
+            max-width: 1360px; margin: 22px auto; padding: 0 16px;
+            display: flex; flex-direction: column; gap: 20px;
+        }
+
+        .metrics-row {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px;
+        }
+        .metric-card {
+            background: linear-gradient(165deg, rgba(28, 37, 56, 0.55), rgba(15, 20, 32, 0.9));
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 16px 14px;
+            position: relative; overflow: hidden;
+            transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
+        .metric-card:hover {
+            border-color: rgba(99, 102, 241, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(99, 102, 241, 0.12);
+        }
+        .metric-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0.7;
+        }
+        .metric-card .card-top {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;
+        }
+        .metric-card .icon-pill {
+            width: 34px; height: 34px; border-radius: 10px;
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.88rem; color: var(--primary);
+        }
+        .metric-card .label {
+            font-size: 0.68rem; font-weight: 700; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.6px;
+        }
+        .metric-card .value {
+            font-size: 1.55rem; font-weight: 800; letter-spacing: -0.5px;
+            font-variant-numeric: tabular-nums;
+        }
+        .metric-card .trend {
+            font-size: 0.7rem; color: var(--text-dim); margin-top: 5px;
+            display: flex; align-items: center; gap: 5px; font-weight: 600;
+        }
+
+        .workspace-grid {
+            display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px;
+        }
+        .panel-card {
+            background: linear-gradient(180deg, rgba(28, 37, 56, 0.35), rgba(21, 28, 44, 0.95));
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 20px;
+            display: flex; flex-direction: column; gap: 16px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+        }
+        .panel-header {
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--border); padding-bottom: 12px; gap: 10px; flex-wrap: wrap;
+        }
+        .panel-header h2 {
+            font-size: 1.02rem; font-weight: 800;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .badge-draft {
+            background: rgba(245, 158, 11, 0.12);
+            color: var(--warning);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            font-size: 0.68rem; padding: 3px 10px; border-radius: 20px; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .badge-live {
+            background: rgba(16, 185, 129, 0.12);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            font-size: 0.68rem; padding: 3px 10px; border-radius: 20px; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .section-intro {
+            font-size: 0.82rem; color: var(--text-muted); font-weight: 500; margin-top: -6px;
+        }
+
+        .form-group { display: flex; flex-direction: column; gap: 7px; }
+        .form-group label {
+            font-size: 0.78rem; font-weight: 700; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .form-control {
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            padding: 12px 14px;
+            color: var(--text);
+            font-family: var(--font);
+            font-size: 0.9rem;
+            font-weight: 500;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-glow);
+        }
+        textarea.form-control { resize: vertical; min-height: 90px; }
+
+        .toggle-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px; gap: 12px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+        .toggle-info h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 3px; }
+        .toggle-info p { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; line-height: 1.35; }
+
+        .switch { position: relative; display: inline-block; width: 48px; height: 26px; flex-shrink: 0; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute; cursor: pointer; inset: 0;
+            background-color: var(--border-soft); transition: .25s; border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute; content: ""; height: 20px; width: 20px;
+            left: 3px; bottom: 3px; background-color: #fff; transition: .25s;
+            border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+        }
+        input:checked + .slider { background-color: var(--primary); }
+        input:checked + .slider:before { transform: translateX(22px); }
+
+        .preview-phone {
+            background: linear-gradient(180deg, #0c101a, #121824);
+            border: 1.5px solid var(--border);
+            border-radius: 24px;
+            padding: 16px 14px 18px;
+            box-shadow: var(--shadow);
+        }
+        .phone-topbar {
+            height: 16px; display: flex; justify-content: center; align-items: center; margin-bottom: 12px;
+        }
+        .phone-notch {
+            width: 56px; height: 6px; background: var(--border-soft); border-radius: 10px;
+        }
+        .preview-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-soft);
+            border-left: 4px solid var(--primary);
+            border-radius: 14px;
+            padding: 14px 16px;
+            display: flex; flex-direction: column; gap: 6px;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+        }
+        .preview-card h5 {
+            font-size: 0.88rem; font-weight: 800; color: var(--text);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .preview-card p {
+            font-size: 0.8rem; color: var(--text-muted); line-height: 1.45;
+            word-break: break-word; font-weight: 500;
+        }
+
+        .table-responsive {
+            width: 100%; overflow-x: auto;
+            border-radius: 14px; border: 1px solid var(--border);
+            -webkit-overflow-scrolling: touch;
+        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left; min-width: 640px; }
+        th {
+            background: var(--surface);
+            padding: 12px 14px;
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.55px;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+        }
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface-card);
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: var(--surface-hover); }
+        .user-cell { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+        .avatar-circle {
+            width: 32px; height: 32px; border-radius: 10px;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+        }
+        .status-pill {
+            font-size: 0.7rem; padding: 4px 10px; border-radius: 20px; font-weight: 800;
+            border: 1px solid transparent;
+        }
+        .status-pill.active {
+            background: rgba(16, 185, 129, 0.12); color: var(--success);
+            border-color: rgba(16, 185, 129, 0.25);
+        }
+        .status-pill.idle {
+            background: rgba(148, 163, 184, 0.12); color: var(--text-muted);
+            border-color: rgba(148, 163, 184, 0.25);
+        }
+        .status-pill.pending {
+            background: rgba(245, 158, 11, 0.12); color: var(--warning);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        .status-pill.done {
+            background: rgba(99, 102, 241, 0.12); color: #a5b4fc;
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        .status-pill.declined {
+            background: rgba(239, 68, 68, 0.1); color: var(--danger);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+        .title-chip {
+            display: inline-flex; font-size: 0.68rem; font-weight: 800;
+            padding: 3px 8px; border-radius: 8px;
+            background: rgba(165, 180, 252, 0.12); color: #a5b4fc;
+            border: 1px solid rgba(165, 180, 252, 0.25);
+        }
+
+        .activity-feed {
+            display: flex; flex-direction: column; gap: 10px;
+            max-height: 420px; overflow-y: auto; padding-right: 4px;
+        }
+        .activity-item {
+            display: flex; gap: 12px; align-items: flex-start;
+            padding: 12px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+        .activity-icon {
+            width: 36px; height: 36px; border-radius: 12px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(99, 102, 241, 0.12); color: var(--primary); font-size: 0.9rem;
+        }
+        .activity-body { flex: 1; min-width: 0; }
+        .activity-body h4 { font-size: 0.86rem; font-weight: 700; margin-bottom: 3px; }
+        .activity-body p { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; line-height: 1.35; }
+        .activity-time { font-size: 0.68rem; color: var(--text-dim); font-weight: 600; white-space: nowrap; }
+
+        .level-bars { display: flex; flex-direction: column; gap: 10px; }
+        .level-row {
+            display: grid; grid-template-columns: 90px 1fr 48px; gap: 10px; align-items: center;
+        }
+        .level-row span { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); }
+        .level-row .bar-track {
+            height: 10px; background: var(--surface); border-radius: 999px; overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .level-row .bar-fill {
+            height: 100%; border-radius: 999px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 0%; transition: width 0.5s ease;
+        }
+        .level-row strong { font-size: 0.8rem; font-weight: 800; text-align: right; }
+
+        .filter-row {
+            display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+        }
+        .filter-row input {
+            flex: 1; min-width: 160px;
+        }
+
+        .publish-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: rgba(15, 20, 32, 0.96);
+            backdrop-filter: blur(18px);
+            border-top: 1px solid var(--border);
+            padding: 14px 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 200;
+            box-shadow: 0 -12px 32px rgba(0,0,0,0.45);
+            transform: translateY(110%);
+            transition: transform 0.3s ease;
+            gap: 12px; flex-wrap: wrap;
+        }
+        .publish-bar.active { transform: translateY(0); }
+        .publish-info { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 200px; }
+        .status-dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: var(--warning);
+            box-shadow: 0 0 10px var(--warning);
+            flex-shrink: 0;
+        }
+        .publish-info strong { font-size: 0.9rem; display: block; font-weight: 800; }
+        .publish-info p { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; }
+
+        .toast {
+            position: fixed; top: 18px; right: 18px; left: 18px; max-width: 420px; margin-left: auto;
+            background: var(--surface-card);
+            border: 1px solid var(--success);
+            border-left: 5px solid var(--success);
+            color: var(--text);
+            padding: 14px 16px;
+            border-radius: 14px;
+            font-size: 0.88rem; font-weight: 700;
+            box-shadow: var(--shadow);
+            display: flex; align-items: center; gap: 12px;
+            opacity: 0; pointer-events: none; transition: 0.3s ease; z-index: 300;
+        }
+        .toast.show { opacity: 1; pointer-events: auto; }
+
+        @media (max-width: 960px) {
+            .workspace-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .top-navbar { padding: 12px 14px; }
+            .header-actions { width: 100%; }
+            .main-wrapper { margin: 14px auto; padding: 0 12px; }
+            .metrics-row { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .metric-card .value { font-size: 1.35rem; }
+            .publish-btn-container { width: 100%; }
+            .publish-btn-container .btn { width: 100%; }
+            .publish-info p { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-navbar">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <div class="logo-box">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYIwo7ka6tfgWn1Xoy8tcxZHg8axRw5dA7mHuq3QeCsmowToeqWcaq4jvauQEIL_-07F-VcDMs2_cyHTSg-cRG4JpIFPdidNn_4MQmgJBLINGCjeigvrug5y-rAVf1QgampgG7dXRz_RZLIwfCn0Au_vh4iJRzltU_NElQwLjbdEyf1nR6qjXv1fsVjq9Q/s320-rw/file_00000000412c81f4b80c1d83eeaa13f7.png" alt="QuizSir">
+                </div>
+                <div class="brand-title">
+                    <h1>QuizSir Admin</h1>
+                    <span>Live Control Console</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="sync-meta"><span class="live-dot"></span> <span id="lastSyncLabel">Not synced yet</span></div>
+                <button class="btn btn-secondary" type="button" onclick="fetchLiveData()">
+                    <i class="fas fa-arrows-rotate"></i> Sync Data
+                </button>
+                <button class="btn btn-publish" type="button" onclick="publishAllChanges()">
+                    <i class="fas fa-cloud-arrow-up"></i> Publish Live
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+
+        <div class="page-hero">
+            <div>
+                <h2>Overview</h2>
+                <p>Live mirror of player activity, rankings, and social features.</p>
+            </div>
+        </div>
+
+        <p class="section-label">Key metrics</p>
+        <section class="metrics-row">
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Total Users</span>
+                    <div class="icon-pill"><i class="fas fa-users"></i></div>
+                </div>
+                <div class="value" id="valTotalUsers">0</div>
+                <div class="trend"><i class="fas fa-circle-check" style="color: var(--success);"></i> Registered</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Avg Points</span>
+                    <div class="icon-pill"><i class="fas fa-star"></i></div>
+                </div>
+                <div class="value" id="valAvgPoints">0</div>
+                <div class="trend"><i class="fas fa-chart-line" style="color: var(--accent);"></i> Engagement</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Active (24h)</span>
+                    <div class="icon-pill"><i class="fas fa-bolt"></i></div>
+                </div>
+                <div class="value" id="valActiveUsers">0</div>
+                <div class="trend"><i class="fas fa-signal" style="color: var(--primary);"></i> Recent play</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Questions Answered</span>
+                    <div class="icon-pill"><i class="fas fa-list-check"></i></div>
+                </div>
+                <div class="value" id="valAnswered">0</div>
+                <div class="trend"><i class="fas fa-pen" style="color: var(--warning);"></i> All users</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Correct Answers</span>
+                    <div class="icon-pill"><i class="fas fa-check-double"></i></div>
+                </div>
+                <div class="value" id="valCorrect">0</div>
+                <div class="trend"><i class="fas fa-bullseye" style="color: var(--success);"></i> Accuracy <span id="valAccuracy">—</span></div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Challenges</span>
+                    <div class="icon-pill"><i class="fas fa-sword"></i></div>
+                </div>
+                <div class="value" id="valChallenges">0</div>
+                <div class="trend"><i class="fas fa-flag-checkered" style="color: var(--warning);"></i> <span id="valChalDone">0</span> completed</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Friend Links</span>
+                    <div class="icon-pill"><i class="fas fa-user-friends"></i></div>
+                </div>
+                <div class="value" id="valFriendLinks">0</div>
+                <div class="trend"><i class="fas fa-envelope" style="color: var(--accent);"></i> <span id="valPendingReq">0</span> pending</div>
+            </div>
+            <div class="metric-card">
+                <div class="card-top">
+                    <span class="label">Daily Plays</span>
+                    <div class="icon-pill"><i class="fas fa-bolt"></i></div>
+                </div>
+                <div class="value" id="valDaily">0</div>
+                <div class="trend"><i class="fas fa-calendar-check" style="color: var(--success);"></i> Done today</div>
+            </div>
+        </section>
+
+        <section class="workspace-grid">
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-bullhorn" style="color: var(--accent);"></i> Broadcast Push</h2>
+                        <span class="badge-draft">Staging</span>
+                    </div>
+                    <p class="section-intro">Appears as in-app notifications after you publish.</p>
+                    <div class="form-group">
+                        <label>Notification Title</label>
+                        <input type="text" id="notifTitle" class="form-control" placeholder="e.g. Weekly Tournament Live" oninput="stageChange(); updatePreview();">
+                    </div>
+                    <div class="form-group">
+                        <label>Announcement Message</label>
+                        <textarea id="notifMsg" class="form-control" placeholder="Write the message users will see…" oninput="stageChange(); updatePreview();"></textarea>
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-rectangle-ad" style="color: var(--primary);"></i> Sponsorship & Ads</h2>
+                        <span class="badge-draft">Staging</span>
+                    </div>
+                    <div class="toggle-item">
+                        <div class="toggle-info">
+                            <h4>Enable Remote Ads</h4>
+                            <p>Show custom banner HTML inside the client app</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="adsToggle" onchange="stageChange()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Ad HTML / Script Embed</label>
+                        <textarea id="bannerCode" class="form-control" style="font-family: var(--mono); font-size: 0.8rem;" placeholder="Paste banner or ad network embed code…" oninput="stageChange()"></textarea>
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-layer-group" style="color: var(--warning);"></i> Course Progress</h2>
+                        <span class="badge-live">Live</span>
+                    </div>
+                    <p class="section-intro">How far players have unlocked courses.</p>
+                    <div class="level-bars" id="levelBars"></div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-mobile-screen-button" style="color: var(--success);"></i> Client Push Preview</h2>
+                    </div>
+                    <div class="preview-phone">
+                        <div class="phone-topbar"><div class="phone-notch"></div></div>
+                        <div class="preview-card">
+                            <h5 id="prevTitle"><i class="fas fa-bell" style="color: var(--accent);"></i> Announcement Title</h5>
+                            <p id="prevMsg">Your notification message preview will render here as you type…</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-gears" style="color: var(--warning);"></i> Maintenance Control</h2>
+                        <span class="badge-draft">Staging</span>
+                    </div>
+                    <div class="toggle-item">
+                        <div class="toggle-info">
+                            <h4>Maintenance Mode</h4>
+                            <p>Locks client access and shows an update message</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="maintToggle" onchange="stageChange()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Maintenance Display Message</label>
+                        <input type="text" id="maintMsg" class="form-control" value="We are performing scheduled maintenance. Back online shortly!" oninput="stageChange()">
+                    </div>
+                </div>
+
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-stream" style="color: var(--accent);"></i> Recent Activity</h2>
+                        <span class="badge-live">Live</span>
+                    </div>
+                    <div class="activity-feed" id="activityFeed">
+                        <div class="activity-item">
+                            <div class="activity-icon"><i class="fas fa-spinner fa-spin"></i></div>
+                            <div class="activity-body">
+                                <h4>Loading activity…</h4>
+                                <p>Syncing client events</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel-card">
+            <div class="panel-header">
+                <h2><i class="fas fa-trophy" style="color: var(--warning);"></i> Live Leaderboard</h2>
+                <button class="btn btn-danger-outline" type="button" onclick="resetLeaderboard()">
+                    <i class="fas fa-rotate-left"></i> Reset Leaderboard
+                </button>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Title</th>
+                            <th>Points</th>
+                            <th>Level</th>
+                            <th>Streak</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardTableBody">
+                        <tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 24px;">Fetching leaderboard…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel-card">
+            <div class="panel-header">
+                <h2><i class="fas fa-users-viewfinder" style="color: var(--primary);"></i> Players Directory</h2>
+                <div class="filter-row" style="margin:0;">
+                    <input type="text" id="userSearch" class="form-control" placeholder="Search player…" oninput="renderUsersTable()" style="min-width:180px;padding:8px 12px;">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Gender</th>
+                            <th>Points</th>
+                            <th>Level</th>
+                            <th>Answered</th>
+                            <th>Correct</th>
+                            <th>Streak</th>
+                            <th>Daily</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Last Active</th>
+                            <th style="text-align:center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                        <tr><td colspan="12" style="text-align: center; color: var(--text-muted); padding: 24px;">Fetching directory…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="workspace-grid">
+            <div class="panel-card">
+                <div class="panel-header">
+                    <h2><i class="fas fa-handshake" style="color: var(--accent);"></i> Friend Requests</h2>
+                    <span class="badge-live">Live</span>
+                </div>
+                <div class="table-responsive">
+                    <table style="min-width: 480px;">
+                        <thead>
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Status</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="requestsTableBody">
+                            <tr><td colspan="4" style="text-align: center; color: var(--text-muted); padding: 20px;">No requests</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel-card">
+                <div class="panel-header">
+                    <h2><i class="fas fa-bolt" style="color: var(--warning);"></i> Challenges</h2>
+                    <span class="badge-live">Live</span>
+                </div>
+                <div class="table-responsive">
+                    <table style="min-width: 520px;">
+                        <thead>
+                            <tr>
+                                <th>Players</th>
+                                <th>Level</th>
+                                <th>Scores</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody id="challengesTableBody">
+                            <tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 20px;">No challenges</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="publish-bar" id="publishBar">
+        <div class="publish-info">
+            <div class="status-dot"></div>
+            <div>
+                <strong>Unpublished changes staged</strong>
+                <p>Changes will not affect live users until published.</p>
+            </div>
+        </div>
+        <div class="publish-btn-container">
+            <button class="btn btn-publish" type="button" onclick="publishAllChanges()">
+                <i class="fas fa-cloud-arrow-up"></i> Publish Changes Now
+            </button>
+        </div>
+    </div>
+
+    <div class="toast" id="toastNotif">
+        <i class="fas fa-circle-check" style="color: var(--success); font-size: 1.2rem;" id="toastIcon"></i>
+        <span id="toastMsg">All updates pushed successfully!</span>
+    </div>
+
+    <script>
+        const DB_ROOT_URL = "https://quiz-c7b07-default-rtdb.firebaseio.com";
+        let hasUnsavedChanges = false;
+        let cachedUsers = [];
+        let autoSyncTimer = null;
+
+        function stageChange() {
+            hasUnsavedChanges = true;
+            document.getElementById("publishBar").classList.add("active");
+        }
+
+        function updatePreview() {
+            const title = document.getElementById("notifTitle").value.trim();
+            const msg = document.getElementById("notifMsg").value.trim();
+            document.getElementById("prevTitle").innerHTML =
+                `<i class="fas fa-bell" style="color: var(--accent);"></i> ${title || "Announcement Title"}`;
+            document.getElementById("prevMsg").innerText =
+                msg || "Your notification message preview will render here as you type…";
+        }
+
+        function escapeHtml(str) {
+            return String(str || "").replace(/[&<>"']/g, t => ({
+                "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+            }[t]));
+        }
+
+        function todayKey() {
+            const d = new Date();
+            return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+        }
+
+        function isActive24h(iso) {
+            if (!iso) return false;
+            const t = new Date(iso).getTime();
+            if (isNaN(t)) return false;
+            return (Date.now() - t) < 24 * 60 * 60 * 1000;
+        }
+
+        function formatTime(iso) {
+            if (!iso) return "—";
+            try {
+                const d = new Date(iso);
+                if (isNaN(d.getTime())) return "—";
+                return d.toLocaleString();
+            } catch (e) {
+                return "—";
+            }
+        }
+
+        function relativeTime(iso) {
+            if (!iso) return "";
+            const t = new Date(iso).getTime();
+            if (isNaN(t)) return "";
+            const diff = Math.max(0, Date.now() - t);
+            const m = Math.floor(diff / 60000);
+            if (m < 1) return "just now";
+            if (m < 60) return m + "m ago";
+            const h = Math.floor(m / 60);
+            if (h < 24) return h + "h ago";
+            const d = Math.floor(h / 24);
+            return d + "d ago";
+        }
+
+        async function fetchLiveData() {
+            try {
+                const [usersRes, reqRes, chalRes, friendsRes, configRes, lvlRes] = await Promise.all([
+                    fetch(DB_ROOT_URL + "/users.json"),
+                    fetch(DB_ROOT_URL + "/friendRequests.json"),
+                    fetch(DB_ROOT_URL + "/challenges.json"),
+                    fetch(DB_ROOT_URL + "/friends.json"),
+                    fetch(DB_ROOT_URL + "/config.json"),
+                    fetch(DB_ROOT_URL + "/analytics/levels.json")
+                ]);
+
+                const usersData = usersRes.ok ? await usersRes.json() : null;
+                const reqData = reqRes.ok ? await reqRes.json() : null;
+                const chalData = chalRes.ok ? await chalRes.json() : null;
+                const friendsData = friendsRes.ok ? await friendsRes.json() : null;
+                const config = configRes.ok ? await configRes.json() : null;
+                const lvlData = lvlRes.ok ? await lvlRes.json() : null;
+
+                // ---- Users ----
+                let totalUsers = 0;
+                let totalPointsSum = 0;
+                let activeCount = 0;
+                let totalAnswered = 0;
+                let totalCorrect = 0;
+                let dailyCount = 0;
+                const today = todayKey();
+                const levelUnlocks = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+                const userArray = [];
+                const activity = [];
+
+                if (usersData) {
+                    Object.keys(usersData).forEach(key => {
+                        const u = usersData[key] || {};
+                        const pts = u.points || 0;
+                        const answered = u.totalAnswered || 0;
+                        const correct = u.totalCorrect || 0;
+                        const unlocked = u.unlockedLevel || 1;
+                        totalUsers++;
+                        totalPointsSum += pts;
+                        totalAnswered += answered;
+                        totalCorrect += correct;
+                        if (isActive24h(u.lastActive)) activeCount++;
+                        if (u.dailyDate === today) dailyCount++;
+                        for (let L = 1; L <= 5; L++) {
+                            if (unlocked >= L) levelUnlocks[L]++;
+                        }
+                        userArray.push({ id: key, ...u, points: pts, unlockedLevel: unlocked });
+
+                        if (u.lastActive) {
+                            activity.push({
+                                t: new Date(u.lastActive).getTime() || 0,
+                                icon: "fa-user",
+                                title: (u.name || "Player") + " was active",
+                                body: (pts + " pts · Level " + unlocked + (u.title ? " · " + u.title : "")),
+                                time: relativeTime(u.lastActive)
+                            });
+                        }
+                    });
+                }
+
+                cachedUsers = userArray.slice().sort((a, b) => (b.points || 0) - (a.points || 0));
+
+                document.getElementById("valTotalUsers").innerText = totalUsers.toLocaleString();
+                document.getElementById("valAvgPoints").innerText = totalUsers > 0 ? Math.round(totalPointsSum / totalUsers).toLocaleString() : "0";
+                document.getElementById("valActiveUsers").innerText = activeCount.toLocaleString();
+                document.getElementById("valAnswered").innerText = totalAnswered.toLocaleString();
+                document.getElementById("valCorrect").innerText = totalCorrect.toLocaleString();
+                document.getElementById("valAccuracy").innerText = totalAnswered > 0
+                    ? Math.round((totalCorrect / totalAnswered) * 100) + "%"
+                    : "—";
+                document.getElementById("valDaily").innerText = dailyCount.toLocaleString();
+
+                renderUsersTable();
+                renderLeaderboard(cachedUsers);
+                renderLevelBars(levelUnlocks, totalUsers);
+
+                // ---- Friend requests ----
+                let pendingReq = 0;
+                const reqRows = [];
+                if (reqData) {
+                    Object.keys(reqData).forEach(id => {
+                        const r = reqData[id] || {};
+                        if ((r.status || "pending") === "pending") pendingReq++;
+                        reqRows.push({ id, ...r });
+                        activity.push({
+                            t: r.createdAt ? new Date(r.createdAt).getTime() : 0,
+                            icon: "fa-user-plus",
+                            title: (r.fromName || "Player") + " → " + (r.toName || "Player"),
+                            body: "Friend request · " + (r.status || "pending"),
+                            time: relativeTime(r.createdAt)
+                        });
+                    });
+                }
+                document.getElementById("valPendingReq").innerText = String(pendingReq);
+                renderRequests(reqRows);
+
+                // ---- Challenges ----
+                let chalCount = 0;
+                let chalDone = 0;
+                const chalRows = [];
+                if (chalData) {
+                    Object.keys(chalData).forEach(id => {
+                        const c = chalData[id] || {};
+                        chalCount++;
+                        if (c.status === "completed" || (c.fromDone && c.toDone)) chalDone++;
+                        chalRows.push({ id, ...c });
+                        activity.push({
+                            t: c.createdAt ? new Date(c.createdAt).getTime() : 0,
+                            icon: "fa-bolt",
+                            title: (c.fromName || "?") + " vs " + (c.toName || "?"),
+                            body: "Challenge · Level " + (c.level || "—") + " · " + (c.status || "active"),
+                            time: relativeTime(c.createdAt)
+                        });
+                    });
+                }
+                document.getElementById("valChallenges").innerText = chalCount.toLocaleString();
+                document.getElementById("valChalDone").innerText = String(chalDone);
+                renderChallenges(chalRows);
+
+                // ---- Friend graph size ----
+                let friendLinks = 0;
+                if (friendsData) {
+                    Object.keys(friendsData).forEach(uid => {
+                        const map = friendsData[uid];
+                        if (map && typeof map === "object") {
+                            friendLinks += Object.keys(map).filter(k => map[k]).length;
+                        }
+                    });
+                    // each friendship stored twice
+                    friendLinks = Math.round(friendLinks / 2);
+                }
+                document.getElementById("valFriendLinks").innerText = friendLinks.toLocaleString();
+
+                // ---- Activity feed ----
+                activity.sort((a, b) => b.t - a.t);
+                renderActivity(activity.slice(0, 40));
+
+                // ---- Config ----
+                if (config) {
+                    document.getElementById("maintToggle").checked = !!config.maintenance;
+                    if (config.maintenance_msg) document.getElementById("maintMsg").value = config.maintenance_msg;
+                    document.getElementById("adsToggle").checked = !!config.ads_enabled;
+                    if (config.banner_html) document.getElementById("bannerCode").value = config.banner_html;
+                    if (config.announcement) {
+                        document.getElementById("notifTitle").value = config.announcement.title || "";
+                        document.getElementById("notifMsg").value = config.announcement.message || "";
+                        updatePreview();
+                    }
+                }
+
+                // Optional analytics passes (legacy)
+                if (lvlData) {
+                    // kept for compatibility; primary metrics already from users
+                }
+
+                document.getElementById("lastSyncLabel").innerText = "Synced " + new Date().toLocaleTimeString();
+            } catch (err) {
+                console.warn("Admin sync error:", err);
+                document.getElementById("lastSyncLabel").innerText = "Sync failed";
+                showToast("Could not sync live data. Check connection.", "warning");
+            }
+        }
+
+        function renderLeaderboard(userArray) {
+            let html = "";
+            if (userArray.length) {
+                userArray.slice(0, 25).forEach((u, i) => {
+                    const rank = i + 1;
+                    const badge = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" :
+                        `<span style="color: var(--text-muted); font-weight: 800;">#${rank}</span>`;
+                    const title = u.title || (u.points >= 500 ? "Legend" : u.points >= 100 ? "Scholar" : "");
+                    html += `
+                        <tr>
+                            <td style="width:70px;text-align:center;font-size:1.1rem;">${badge}</td>
+                            <td style="font-weight:700;">${escapeHtml(u.name || "Player")}</td>
+                            <td>${title ? `<span class="title-chip">${escapeHtml(title)}</span>` : "—"}</td>
+                            <td><strong style="color:var(--warning);">${(u.points || 0).toLocaleString()} pts</strong></td>
+                            <td>L${u.unlockedLevel || 1}</td>
+                            <td>${u.streak || 0}🔥</td>
+                        </tr>`;
+                });
+            } else {
+                html = `<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:24px;">Leaderboard is empty.</td></tr>`;
+            }
+            document.getElementById("leaderboardTableBody").innerHTML = html;
+        }
+
+        function renderUsersTable() {
+            const q = (document.getElementById("userSearch").value || "").trim().toLowerCase();
+            let list = cachedUsers;
+            if (q) {
+                list = list.filter(u => String(u.name || "").toLowerCase().includes(q));
+            }
+            let html = "";
+            if (!list.length) {
+                html = `<tr><td colspan="12" style="text-align:center;color:var(--text-muted);padding:24px;">No players found.</td></tr>`;
+            } else {
+                list.forEach(u => {
+                    const avatar = u.gender === "Female" ? "👩‍🎓" : "👨‍🎓";
+                    const active = isActive24h(u.lastActive);
+                    const title = u.title || "";
+                    const daily = u.dailyDate === todayKey() ? "Done" : "—";
+                    html += `
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="avatar-circle">${avatar}</div>
+                                    <span>${escapeHtml(u.name || "Player")}</span>
+                                </div>
+                            </td>
+                            <td>${escapeHtml(u.gender || "—")}</td>
+                            <td><strong style="color:var(--accent);">${(u.points || 0).toLocaleString()}</strong></td>
+                            <td>L${u.unlockedLevel || 1}</td>
+                            <td>${u.totalAnswered || 0}</td>
+                            <td>${u.totalCorrect || 0}</td>
+                            <td>${u.streak || 0}</td>
+                            <td>${daily}</td>
+                            <td>${title ? `<span class="title-chip">${escapeHtml(title)}</span>` : "—"}</td>
+                            <td><span class="status-pill ${active ? "active" : "idle"}">${active ? "Active" : "Idle"}</span></td>
+                            <td style="color:var(--text-muted);font-size:0.78rem;">${escapeHtml(formatTime(u.lastActive))}</td>
+                            <td style="text-align:center;">
+                                <button type="button" class="btn-icon" title="Remove user" data-uid="${escapeHtml(u.id || "")}" data-uname="${escapeHtml(u.name || "Player")}">
+                                    <i class="fas fa-trash-can"></i>
+                                </button>
+                            </td>
+                        </tr>`;
+                });
+            }
+            const tbody = document.getElementById("userTableBody");
+            tbody.innerHTML = html;
+            tbody.querySelectorAll(".btn-icon[data-uid]").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    removeUser(btn.getAttribute("data-uid"), btn.getAttribute("data-uname"));
+                });
+            });
+        }
+
+        async function removeUser(userId, userName) {
+            if (!userId) return;
+            const label = userName || "this player";
+            if (!confirm("Remove " + label + "?\n\nThis deletes their profile, scores, and related social data.")) {
+                return;
+            }
+            try {
+                // 1) User profile
+                await fetch(DB_ROOT_URL + "/users/" + encodeURIComponent(userId) + ".json", { method: "DELETE" });
+
+                // 2) Their friends map + reciprocal links
+                try {
+                    const frRes = await fetch(DB_ROOT_URL + "/friends/" + encodeURIComponent(userId) + ".json");
+                    const frMap = frRes.ok ? await frRes.json() : null;
+                    if (frMap && typeof frMap === "object") {
+                        const ops = Object.keys(frMap).map(fid =>
+                            fetch(DB_ROOT_URL + "/friends/" + encodeURIComponent(fid) + "/" + encodeURIComponent(userId) + ".json", { method: "DELETE" })
+                        );
+                        await Promise.all(ops);
+                    }
+                    await fetch(DB_ROOT_URL + "/friends/" + encodeURIComponent(userId) + ".json", { method: "DELETE" });
+                } catch (e) {}
+
+                // 3) Friend requests involving them
+                try {
+                    const reqRes = await fetch(DB_ROOT_URL + "/friendRequests.json");
+                    const reqData = reqRes.ok ? await reqRes.json() : null;
+                    if (reqData) {
+                        const dels = [];
+                        Object.keys(reqData).forEach(rid => {
+                            const r = reqData[rid] || {};
+                            if (r.from === userId || r.to === userId) {
+                                dels.push(fetch(DB_ROOT_URL + "/friendRequests/" + encodeURIComponent(rid) + ".json", { method: "DELETE" }));
+                            }
+                        });
+                        await Promise.all(dels);
+                    }
+                } catch (e) {}
+
+                // 4) Challenges involving them
+                try {
+                    const chalRes = await fetch(DB_ROOT_URL + "/challenges.json");
+                    const chalData = chalRes.ok ? await chalRes.json() : null;
+                    if (chalData) {
+                        const dels = [];
+                        Object.keys(chalData).forEach(cid => {
+                            const c = chalData[cid] || {};
+                            if (c.from === userId || c.to === userId) {
+                                dels.push(fetch(DB_ROOT_URL + "/challenges/" + encodeURIComponent(cid) + ".json", { method: "DELETE" }));
+                            }
+                        });
+                        await Promise.all(dels);
+                    }
+                } catch (e) {}
+
+                showToast(label + " removed.", "success");
+                await fetchLiveData();
+            } catch (err) {
+                console.warn(err);
+                showToast("Could not remove user. Try again.", "warning");
+            }
+        }
+
+        function renderLevelBars(levelUnlocks, totalUsers) {
+            const el = document.getElementById("levelBars");
+            const labels = {
+                1: "Level 1",
+                2: "Level 2",
+                3: "Level 3",
+                4: "Level 4",
+                5: "Level 5"
+            };
+            let html = "";
+            for (let L = 1; L <= 5; L++) {
+                const n = levelUnlocks[L] || 0;
+                const pct = totalUsers > 0 ? Math.round((n / totalUsers) * 100) : 0;
+                html += `
+                    <div class="level-row">
+                        <span>${labels[L]}</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+                        <strong>${n}</strong>
+                    </div>`;
+            }
+            el.innerHTML = html || `<p style="color:var(--text-muted);font-size:0.84rem;">No data yet.</p>`;
+        }
+
+        function renderRequests(rows) {
+            rows.sort((a, b) => {
+                const ta = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+                const tb = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+                return tb - ta;
+            });
+            let html = "";
+            if (!rows.length) {
+                html = `<tr><td colspan="4" style="text-align:center;color:var(--text-muted);padding:20px;">No friend requests.</td></tr>`;
+            } else {
+                rows.slice(0, 50).forEach(r => {
+                    const st = (r.status || "pending").toLowerCase();
+                    const pill = st === "accepted" ? "done" : st === "declined" ? "declined" : "pending";
+                    html += `
+                        <tr>
+                            <td style="font-weight:700;">${escapeHtml(r.fromName || "—")}</td>
+                            <td>${escapeHtml(r.toName || "—")}</td>
+                            <td><span class="status-pill ${pill}">${escapeHtml(st)}</span></td>
+                            <td style="color:var(--text-muted);font-size:0.78rem;">${escapeHtml(formatTime(r.createdAt))}</td>
+                        </tr>`;
+                });
+            }
+            document.getElementById("requestsTableBody").innerHTML = html;
+        }
+
+        function renderChallenges(rows) {
+            rows.sort((a, b) => {
+                const ta = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+                const tb = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+                return tb - ta;
+            });
+            let html = "";
+            if (!rows.length) {
+                html = `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);padding:20px;">No challenges yet.</td></tr>`;
+            } else {
+                rows.slice(0, 50).forEach(c => {
+                    const done = c.status === "completed" || (c.fromDone && c.toDone);
+                    const fromScore = c.fromScore != null ? c.fromScore : (c.fromDone ? "…" : "—");
+                    const toScore = c.toScore != null ? c.toScore : (c.toDone ? "…" : "—");
+                    html += `
+                        <tr>
+                            <td style="font-weight:700;">${escapeHtml(c.fromName || "?")} vs ${escapeHtml(c.toName || "?")}</td>
+                            <td>L${c.level || "—"}</td>
+                            <td>${fromScore} – ${toScore}</td>
+                            <td><span class="status-pill ${done ? "done" : "pending"}">${done ? "completed" : (c.status || "active")}</span></td>
+                            <td style="color:var(--text-muted);font-size:0.78rem;">${escapeHtml(formatTime(c.createdAt))}</td>
+                        </tr>`;
+                });
+            }
+            document.getElementById("challengesTableBody").innerHTML = html;
+        }
+
+        function renderActivity(items) {
+            const feed = document.getElementById("activityFeed");
+            if (!items.length) {
+                feed.innerHTML = `
+                    <div class="activity-item">
+                        <div class="activity-icon"><i class="fas fa-moon"></i></div>
+                        <div class="activity-body">
+                            <h4>No recent activity</h4>
+                            <p>Client events will appear here after players use the app.</p>
+                        </div>
+                    </div>`;
+                return;
+            }
+            feed.innerHTML = items.map(a => `
+                <div class="activity-item">
+                    <div class="activity-icon"><i class="fas ${a.icon}"></i></div>
+                    <div class="activity-body">
+                        <h4>${escapeHtml(a.title)}</h4>
+                        <p>${escapeHtml(a.body)}</p>
+                    </div>
+                    <div class="activity-time">${escapeHtml(a.time || "")}</div>
+                </div>
+            `).join("");
+        }
+
+        async function publishAllChanges() {
+            const maintenance = document.getElementById("maintToggle").checked;
+            const maintenance_msg = document.getElementById("maintMsg").value.trim();
+            const ads_enabled = document.getElementById("adsToggle").checked;
+            const banner_html = document.getElementById("bannerCode").value;
+            const notifTitle = document.getElementById("notifTitle").value.trim();
+            const notifMsg = document.getElementById("notifMsg").value.trim();
+
+            const fullConfigPayload = {
+                maintenance,
+                maintenance_msg,
+                ads_enabled,
+                banner_html,
+                announcement: {
+                    active: !!(notifTitle && notifMsg),
+                    title: notifTitle,
+                    message: notifMsg,
+                    timestamp: new Date().toISOString()
+                }
+            };
+
+            try {
+                await fetch(DB_ROOT_URL + "/config.json", {
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(fullConfigPayload)
+                });
+                hasUnsavedChanges = false;
+                document.getElementById("publishBar").classList.remove("active");
+                showToast("Updates published successfully.", "success");
+            } catch (err) {
+                showToast("Publish failed. Check connection.", "warning");
+            }
+        }
+
+        async function resetLeaderboard() {
+            if (!confirm("This will permanently clear all player records and scores. Continue?")) return;
+            try {
+                await fetch(DB_ROOT_URL + "/users.json", { method: "DELETE" });
+                fetchLiveData();
+                showToast("Leaderboard cleared.", "warning");
+            } catch (err) {
+                showToast("Could not clear leaderboard.", "warning");
+            }
+        }
+
+        function showToast(message, type) {
+            const toast = document.getElementById("toastNotif");
+            const icon = document.getElementById("toastIcon");
+            if (type === "warning") {
+                toast.style.borderLeftColor = "var(--warning)";
+                toast.style.borderColor = "var(--warning)";
+                icon.className = "fas fa-triangle-exclamation";
+                icon.style.color = "var(--warning)";
+            } else {
+                toast.style.borderLeftColor = "var(--success)";
+                toast.style.borderColor = "var(--success)";
+                icon.className = "fas fa-circle-check";
+                icon.style.color = "var(--success)";
+            }
+            document.getElementById("toastMsg").innerText = message;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3500);
+        }
+
+        // Initial + auto refresh every 45s
+        fetchLiveData();
+        autoSyncTimer = setInterval(fetchLiveData, 45000);
+    </script>
+</body>
+</html>
