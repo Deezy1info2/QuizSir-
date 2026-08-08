@@ -1,357 +1,302 @@
 [
   {
     "id": 1,
-    "question": "What does HTML stand for?",
-    "options": [
-      "HyperText Markup Language",
-      "HighText Machine Language",
-      "Hyper Transfer Markup Language",
-      "Home Tool Markup Language"
-    ],
-    "answer": "HyperText Markup Language"
+    "question": "What is a word that names a person, place, thing, or idea?",
+    "options": ["Verb", "Adjective", "Noun", "Adverb"],
+    "answer": "Noun"
   },
   {
     "id": 2,
-    "question": "Which HTML tag is used to create a hyperlink?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "Which action word describes what a subject is doing in a sentence?",
+    "options": ["Noun", "Verb", "Pronoun", "Preposition"],
+    "answer": "Verb"
   },
   {
     "id": 3,
-    "question": "Which CSS property changes the text color?",
-    "options": ["font-color", "color", "text-color", "foreground"],
-    "answer": "color"
+    "question": "What part of speech describes or modifies a noun?",
+    "options": ["Adjective", "Adverb", "Conjunction", "Interjection"],
+    "answer": "Adjective"
   },
   {
     "id": 4,
-    "question": "Which CSS property controls the size of text?",
-    "options": ["font-style", "font-size", "text-size", "size"],
-    "answer": "font-size"
+    "question": "What is the plural form of the word 'child'?",
+    "options": ["Childs", "Childrens", "Children", "Childes"],
+    "answer": "Children"
   },
   {
     "id": 5,
-    "question": "Which language is primarily used for web page interactivity?",
-    "options": ["Python", "Java", "JavaScript", "PHP"],
-    "answer": "JavaScript"
+    "question": "Fun Fact: A sentence that contains every single letter of the alphabet is called what?",
+    "options": ["An Anagram", "A Pangram", "A Palindrome", "An Acronym"],
+    "answer": "A Pangram"
   },
   {
     "id": 6,
-    "question": "Which symbol is used for IDs in CSS?",
-    "options": [".", "#", "*", "&"],
-    "answer": "#"
+    "question": "Which punctuation mark is used to ask a direct question?",
+    "options": ["Exclamation Mark", "Period", "Question Mark", "Comma"],
+    "answer": "Question Mark"
   },
   {
     "id": 7,
-    "question": "Which symbol is used for classes in CSS?",
-    "options": ["#", ".", "*", "+"],
-    "answer": "."
+    "question": "What type of word replaces a noun, such as 'he', 'she', or 'it'?",
+    "options": ["Preposition", "Pronoun", "Adjective", "Verb"],
+    "answer": "Pronoun"
   },
   {
     "id": 8,
-    "question": "Which HTML element is used to insert an image?",
-    "options": ["<picture>", "<image>", "<img>", "<src>"],
-    "answer": "<img>"
+    "question": "What is the opposite of a word called?",
+    "options": ["Synonym", "Antonym", "Homonym", "Acronym"],
+    "answer": "Antonym"
   },
   {
     "id": 9,
-    "question": "What does CSS stand for?",
-    "options": [
-      "Computer Style Sheets",
-      "Creative Style System",
-      "Cascading Style Sheets",
-      "Colorful Style Sheets"
-    ],
-    "answer": "Cascading Style Sheets"
+    "question": "What do we call two words that mean almost the same thing?",
+    "options": ["Antonyms", "Synonyms", "Homophones", "Idioms"],
+    "answer": "Synonyms"
   },
   {
     "id": 10,
-    "question": "Which HTML tag creates a paragraph?",
-    "options": ["<p>", "<para>", "<text>", "<paragraph>"],
-    "answer": "<p>"
+    "question": "Fun Fact: What is a word that reads the exact same forwards and backwards, like 'racecar'?",
+    "options": ["Palindrome", "Pangram", "Anagram", "Oxymoron"],
+    "answer": "Palindrome"
   },
   {
     "id": 11,
-    "question": "Which JavaScript keyword declares a block-scoped variable?",
-    "options": ["var", "let", "const", "both let and const"],
-    "answer": "both let and const"
+    "question": "Which word is an article?",
+    "options": ["Quickly", "Under", "The", "Because"],
+    "answer": "The"
   },
   {
     "id": 12,
-    "question": "Which HTML tag is used for the largest heading?",
-    "options": ["<h6>", "<h3>", "<h1>", "<head>"],
-    "answer": "<h1>"
+    "question": "What figure of speech makes a direct comparison using 'like' or 'as'?",
+    "options": ["Metaphor", "Simile", "Personification", "Hyperbole"],
+    "answer": "Simile"
   },
   {
     "id": 13,
-    "question": "Which method is used to print a message in the browser console?",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "print()",
-      "echo()"
-    ],
-    "answer": "console.log()"
+    "question": "What figure of speech makes a direct comparison WITHOUT using 'like' or 'as'?",
+    "options": ["Simile", "Metaphor", "Onomatopoeia", "Alliteration"],
+    "answer": "Metaphor"
   },
   {
     "id": 14,
-    "question": "Which CSS property makes text bold?",
-    "options": [
-      "font-weight",
-      "font-style",
-      "text-bold",
-      "weight"
-    ],
-    "answer": "font-weight"
+    "question": "Which word is a conjunction used to connect clauses or words?",
+    "options": ["And", "Run", "Blue", "Happily"],
+    "answer": "And"
   },
   {
     "id": 15,
-    "question": "Which HTML attribute specifies an image source?",
-    "options": ["href", "src", "link", "path"],
-    "answer": "src"
+    "question": "What is the past tense of the irregular verb 'go'?",
+    "options": ["Goed", "Gone", "Went", "Going"],
+    "answer": "Went"
   },
   {
     "id": 16,
-    "question": "Which HTTP method retrieves data from a server?",
-    "options": ["POST", "PUT", "GET", "DELETE"],
-    "answer": "GET"
+    "question": "Fun Fact: Which short word is known as the most commonly used word in the English language?",
+    "options": ["I", "The", "A", "And"],
+    "answer": "The"
   },
   {
     "id": 17,
-    "question": "Which HTTP method is commonly used to submit form data?",
-    "options": ["GET", "POST", "DELETE", "OPTIONS"],
-    "answer": "POST"
+    "question": "What figure of speech involves extreme exaggeration for effect?",
+    "options": ["Understatement", "Hyperbole", "Irony", "Simile"],
+    "answer": "Hyperbole"
   },
   {
     "id": 18,
-    "question": "Which CSS property adds space inside an element's border?",
-    "options": ["margin", "padding", "spacing", "border-space"],
-    "answer": "padding"
+    "question": "What do we call words that sound the same but have different meanings and spellings, like 'two', 'to', and 'too'?",
+    "options": ["Homophones", "Antonyms", "Synonyms", "Prefixes"],
+    "answer": "Homophones"
   },
   {
     "id": 19,
-    "question": "Which CSS property adds space outside an element's border?",
-    "options": ["padding", "margin", "gap", "spacing"],
-    "answer": "margin"
+    "question": "Which word is an adverb in the sentence: 'She ran quickly to the store'?",
+    "options": ["She", "Ran", "Quickly", "Store"],
+    "answer": "Quickly"
   },
   {
     "id": 20,
-    "question": "Which HTML tag creates an unordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ul>"
+    "question": "What letter combination is added to the beginning of a root word to alter its meaning?",
+    "options": ["Suffix", "Prefix", "Infix", "Affix"],
+    "answer": "Prefix"
   },
   {
     "id": 21,
-    "question": "Which HTML tag creates an ordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ol>"
+    "question": "What letter combination is added to the end of a root word to change its meaning or form?",
+    "options": ["Prefix", "Suffix", "Root", "Stem"],
+    "answer": "Suffix"
   },
   {
     "id": 22,
-    "question": "Which HTML tag represents a list item?",
-    "options": ["<item>", "<li>", "<list>", "<ul>"],
-    "answer": "<li>"
+    "question": "Fun Fact: Words like 'buzz', 'hiss', and 'pop' that imitate natural sounds are examples of what?",
+    "options": ["Alliteration", "Onomatopoeia", "Assonance", "Metaphor"],
+    "answer": "Onomatopoeia"
   },
   {
     "id": 23,
-    "question": "Which CSS layout model is one-dimensional?",
-    "options": ["Grid", "Flexbox", "Table", "Float"],
-    "answer": "Flexbox"
+    "question": "What is the study of word origins and how their meanings have changed over time?",
+    "options": ["Etymology", "Syllogism", "Phonics", "Syntax"],
+    "answer": "Etymology"
   },
   {
     "id": 24,
-    "question": "Which CSS layout model is two-dimensional?",
-    "options": ["Flexbox", "Float", "Grid", "Inline"],
-    "answer": "Grid"
+    "question": "Which punctuation mark shows possession or indicates missing letters in contractions?",
+    "options": ["Comma", "Hyphen", "Apostrophe", "Semicolon"],
+    "answer": "Apostrophe"
   },
   {
     "id": 25,
-    "question": "Which HTML element contains metadata about the document?",
-    "options": ["<body>", "<head>", "<meta>", "<header>"],
-    "answer": "<head>"
+    "question": "What is the contraction for 'do not'?",
+    "options": ["Don't", "Dont", "D'ont", "Do'nt"],
+    "answer": "Don't"
   },
   {
     "id": 26,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Management",
-      "Digital Object Model",
-      "Document Orientation Mode"
-    ],
-    "answer": "Document Object Model"
+    "question": "Which part of speech shows position or direction, like 'in', 'on', or 'under'?",
+    "options": ["Preposition", "Conjunction", "Interjection", "Adverb"],
+    "answer": "Preposition"
   },
   {
     "id": 27,
-    "question": "Which JavaScript function displays an alert box?",
-    "options": ["prompt()", "alert()", "confirm()", "console.log()"],
-    "answer": "alert()"
+    "question": "Fun Fact: The sentence 'The quick brown fox jumps over the lazy dog' is famous for what reason?",
+    "options": ["It uses no vowels", "It contains every letter in the English alphabet", "It is the oldest recorded sentence", "It is a famous poem line"],
+    "answer": "It contains every letter in the English alphabet"
   },
   {
     "id": 28,
-    "question": "Which JavaScript operator checks both value and type?",
-    "options": ["==", "=", "===", "!="],
-    "answer": "==="
+    "question": "What literary device repeats the same consonant sound at the start of neighboring words (e.g., 'Peter Piper picked')?",
+    "options": ["Assonance", "Alliteration", "Rhyme", "Consonance"],
+    "answer": "Alliteration"
   },
   {
     "id": 29,
-    "question": "Which HTML5 element is used for navigation links?",
-    "options": ["<nav>", "<menu>", "<section>", "<aside>"],
-    "answer": "<nav>"
+    "question": "What is a group of lines forming a unit in a poem called?",
+    "options": ["Paragraph", "Stanza", "Verse", "Chapter"],
+    "answer": "Stanza"
   },
   {
     "id": 30,
-    "question": "Which HTML5 element is commonly used for the main content?",
-    "options": ["<main>", "<content>", "<section>", "<body>"],
-    "answer": "<main>"
+    "question": "Which punctuation mark links two independent clauses that are closely related in thought?",
+    "options": ["Colon", "Semicolon", "Comma", "Dash"],
+    "answer": "Semicolon"
   },
   {
     "id": 31,
-    "question": "Which CSS property changes the background color?",
-    "options": [
-      "background",
-      "background-color",
-      "bg-color",
-      "color"
-    ],
-    "answer": "background-color"
+    "question": "What is the main idea or underlying message of a story called?",
+    "options": ["Plot", "Setting", "Theme", "Climax"],
+    "answer": "Theme"
   },
   {
     "id": 32,
-    "question": "Which JavaScript method converts JSON text into an object?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.convert()",
-      "JSON.decode()"
-    ],
-    "answer": "JSON.parse()"
+    "question": "Fun Fact: What do you call a word formed by rearranging the letters of another word, like 'listen' and 'silent'?",
+    "options": ["Anagram", "Palindrome", "Homonym", "Acronym"],
+    "answer": "Anagram"
   },
   {
     "id": 33,
-    "question": "Which JavaScript method converts an object into a JSON string?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.encode()",
-      "JSON.object()"
-    ],
-    "answer": "JSON.stringify()"
+    "question": "What is the term for a word, phrase, or expression whose meaning cannot be understood literally, like 'break a leg'?",
+    "options": ["Idiom", "Proverb", "Jargon", "Slang"],
+    "answer": "Idiom"
   },
   {
     "id": 34,
-    "question": "Which HTML input type hides typed characters?",
-    "options": ["text", "password", "hidden", "secure"],
-    "answer": "password"
+    "question": "Which perspective is used when a story is told using 'I' or 'we'?",
+    "options": ["First-person point of view", "Second-person point of view", "Third-person point of view", "Omniscient point of view"],
+    "answer": "First-person point of view"
   },
   {
     "id": 35,
-    "question": "Which CSS property controls the display behavior of an element?",
-    "options": ["position", "display", "visibility", "float"],
-    "answer": "display"
+    "question": "Giving human qualities or traits to non-human objects or animals is called what?",
+    "options": ["Symbolism", "Personification", "Allegory", "Anthropomorphism"],
+    "answer": "Personification"
   },
   {
     "id": 36,
-    "question": "Which value hides an element but keeps its space in the layout?",
-    "options": [
-      "display: none",
-      "visibility: hidden",
-      "opacity: 0",
-      "position: absolute"
-    ],
-    "answer": "visibility: hidden"
+    "question": "What is the comparative form of the adjective 'good'?",
+    "options": ["Gooder", "Better", "Best", "More good"],
+    "answer": "Better"
   },
   {
     "id": 37,
-    "question": "Which HTML tag is used to create a table row?",
-    "options": ["<td>", "<tr>", "<th>", "<table>"],
-    "answer": "<tr>"
+    "question": "What is the superlative form of the adjective 'good'?",
+    "options": ["Best", "Better", "Most good", "Goodest"],
+    "answer": "Best"
   },
   {
     "id": 38,
-    "question": "Which HTML tag defines a table cell?",
-    "options": ["<td>", "<tr>", "<th>", "<cell>"],
-    "answer": "<td>"
+    "question": "Fun Fact: Combining two words to form a new one with a combined meaning (like 'smoke' + 'fog' = 'smog') is called what?",
+    "options": ["Portmanteau", "Compound", "Acronym", "Cognate"],
+    "answer": "Portmanteau"
   },
   {
     "id": 39,
-    "question": "Which HTML tag defines a form?",
-    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
-    "answer": "<form>"
+    "question": "What type of sentence gives a direct command or request?",
+    "options": ["Declarative", "Imperative", "Interrogative", "Exclamatory"],
+    "answer": "Imperative"
   },
   {
     "id": 40,
-    "question": "Which JavaScript loop is guaranteed to execute at least once?",
-    "options": ["for", "while", "do...while", "for...of"],
-    "answer": "do...while"
+    "question": "What type of sentence makes a statement and ends with a period?",
+    "options": ["Imperative", "Exclamatory", "Declarative", "Conditional"],
+    "answer": "Declarative"
   },
   {
     "id": 41,
-    "question": "Which protocol is used to securely browse websites?",
-    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
-    "answer": "HTTPS"
+    "question": "What is the term for the time and place in which a story happens?",
+    "options": ["Plot", "Setting", "Atmosphere", "Context"],
+    "answer": "Setting"
   },
   {
     "id": 42,
-    "question": "Which HTML attribute provides alternative text for an image?",
-    "options": ["title", "alt", "description", "caption"],
-    "answer": "alt"
+    "question": "Fun Fact: What figure of speech uses two contradictory terms side-by-side, such as 'deafening silence'?",
+    "options": ["Oxymoron", "Paradox", "Irony", "Euphemism"],
+    "answer": "Oxymoron"
   },
   {
     "id": 43,
-    "question": "Which CSS property rounds the corners of an element?",
-    "options": [
-      "border-style",
-      "border-radius",
-      "corner-radius",
-      "round"
-    ],
-    "answer": "border-radius"
+    "question": "What is the term for the main character in a story, who drives the action?",
+    "options": ["Antagonist", "Protagonist", "Narrator", "Foil"],
+    "answer": "Protagonist"
   },
   {
     "id": 44,
-    "question": "Which JavaScript event occurs when a button is clicked?",
-    "options": ["onhover", "onclick", "onfocus", "onchange"],
-    "answer": "onclick"
+    "question": "What is the character or force that opposes the main character in a story called?",
+    "options": ["Protagonist", "Antagonist", "Antihero", "Sidekick"],
+    "answer": "Antagonist"
   },
   {
     "id": 45,
-    "question": "Which HTML tag embeds JavaScript code?",
-    "options": ["<javascript>", "<script>", "<js>", "<code>"],
-    "answer": "<script>"
+    "question": "Which verb tense expresses an action that is happening right now?",
+    "options": ["Past tense", "Present continuous tense", "Future tense", "Past perfect tense"],
+    "answer": "Present continuous tense"
   },
   {
     "id": 46,
-    "question": "Which CSS property specifies the stacking order of positioned elements?",
-    "options": ["layer", "stack", "z-index", "order"],
-    "answer": "z-index"
+    "question": "What do we call a mild or indirect word substituted for one considered too harsh or blunt (e.g., 'passed away' instead of 'died')?",
+    "options": ["Euphemism", "Hyperbole", "Idiom", "Metonymy"],
+    "answer": "Euphemism"
   },
   {
     "id": 47,
-    "question": "Which HTML tag creates a line break?",
-    "options": ["<lb>", "<break>", "<br>", "<hr>"],
-    "answer": "<br>"
+    "question": "Fun Fact: A word formed from the initial letters of other words and pronounced as a word itself (like NASA) is called what?",
+    "options": ["Abbreviation", "Acronym", "Initialism", "Contraction"],
+    "answer": "Acronym"
   },
   {
     "id": 48,
-    "question": "Which HTML tag creates a horizontal rule?",
-    "options": ["<line>", "<rule>", "<hr>", "<br>"],
-    "answer": "<hr>"
+    "question": "What is the turning point or moment of highest emotional intensity in a story called?",
+    "options": ["Exposition", "Rising Action", "Climax", "Resolution"],
+    "answer": "Climax"
   },
   {
     "id": 49,
-    "question": "Which JavaScript function asks the user for input?",
-    "options": ["alert()", "confirm()", "prompt()", "input()"],
-    "answer": "prompt()"
+    "question": "Which punctuation mark introduces a list, a quote, or an explanation?",
+    "options": ["Semicolon", "Colon", "Comma", "Dash"],
+    "answer": "Colon"
   },
   {
     "id": 50,
-    "question": "Which CSS property is used to make a website responsive on different screen sizes?",
-    "options": [
-      "@media",
-      "viewport",
-      "responsive",
-      "display"
-    ],
-    "answer": "@media"
+    "question": "What type of noun refers to a general class of people, places, or things (and is not capitalized unless starting a sentence)?",
+    "options": ["Proper noun", "Common noun", "Abstract noun", "Collective noun"],
+    "answer": "Common noun"
   }
 ]
