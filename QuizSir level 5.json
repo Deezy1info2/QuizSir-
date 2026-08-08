@@ -1,7 +1,24 @@
 [
   {
     "id": 1,
-    "question": "What does HTML stand for?",
+    "question": "What does CPU stand for in computer hardware?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Power Unit",
+      "Control Process Unit"
+    ],
+    "answer": "Central Processing Unit"
+  },
+  {
+    "id": 2,
+    "question": "Which component is known as the primary 'short-term memory' of a computer?",
+    "options": ["ROM", "Hard Drive", "RAM", "Graphics Card"],
+    "answer": "RAM"
+  },
+  {
+    "id": 3,
+    "question": "What does HTML stand for in web development?",
     "options": [
       "HyperText Markup Language",
       "HighText Machine Language",
@@ -11,347 +28,320 @@
     "answer": "HyperText Markup Language"
   },
   {
-    "id": 2,
-    "question": "Which HTML tag is used to create a hyperlink?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "id": 4,
+    "question": "Which device converts digital signals from your ISP into analog signals for internet access?",
+    "options": ["Router", "Modem", "Switch", "Hub"],
+    "answer": "Modem"
   },
   {
-    "id": 3,
-    "question": "Which CSS property changes the text color?",
+    "id": 5,
+    "question": "Fun Fact: What was the name of the world's first electronic general-purpose computer?",
+    "options": ["ENIAC", "UNIVAC", "IBM PC", "Altair"],
+    "answer": "ENIAC"
+  },
+  {
+    "id": 6,
+    "question": "Which operating system features a penguin named 'Tux' as its mascot?",
+    "options": ["Windows", "macOS", "Linux", "Android"],
+    "answer": "Linux"
+  },
+  {
+    "id": 7,
+    "question": "What primary language is understood directly by a computer's CPU?",
+    "options": ["Assembly", "Binary Code", "Python", "Java"],
+    "answer": "Binary Code"
+  },
+  {
+    "id": 8,
+    "question": "Which key combination is commonly used to copy selected text or files in Windows?",
+    "options": ["Ctrl + V", "Ctrl + C", "Ctrl + X", "Ctrl + Z"],
+    "answer": "Ctrl + C"
+  },
+  {
+    "id": 9,
+    "question": "What does URL stand for in web browsing?",
+    "options": [
+      "Universal Resource Locator",
+      "Uniform Resource Locator",
+      "Unified Recovery Link",
+      "User Requirement List"
+    ],
+    "answer": "Uniform Resource Locator"
+  },
+  {
+    "id": 10,
+    "question": "Fun Fact: Why was the first computer bug called a 'bug'?",
+    "options": [
+      "It was named after a spider",
+      "An actual moth got trapped in a relay mechanism",
+      "It was a code mistake by Grace Hopper",
+      "It meant 'Bad User Guidance'"
+    ],
+    "answer": "An actual moth got trapped in a relay mechanism"
+  },
+  {
+    "id": 11,
+    "question": "Which programming language is famous for using the slogan 'Write Once, Run Anywhere'?",
+    "options": ["C++", "Java", "Python", "Ruby"],
+    "answer": "Java"
+  },
+  {
+    "id": 12,
+    "question": "Which CSS property changes the text color of an element?",
     "options": ["font-color", "color", "text-color", "foreground"],
     "answer": "color"
   },
   {
-    "id": 4,
-    "question": "Which CSS property controls the size of text?",
-    "options": ["font-style", "font-size", "text-size", "size"],
-    "answer": "font-size"
+    "id": 13,
+    "question": "What type of malware disguises itself as legitimate software to trick users into running it?",
+    "options": ["Worm", "Ransomware", "Trojan Horse", "Spyware"],
+    "answer": "Trojan Horse"
   },
   {
-    "id": 5,
-    "question": "Which language is primarily used for web page interactivity?",
-    "options": ["Python", "Java", "JavaScript", "PHP"],
-    "answer": "JavaScript"
+    "id": 14,
+    "question": "Which device connects multiple networks together and directs data traffic between them?",
+    "options": ["Switch", "Router", "Repeater", "Bridge"],
+    "answer": "Router"
   },
   {
-    "id": 6,
-    "question": "Which symbol is used for IDs in CSS?",
-    "options": [".", "#", "*", "&"],
-    "answer": "#"
+    "id": 15,
+    "question": "Fun Fact: What popular technology gets its name from a 10th-century Scandinavian King?",
+    "options": ["Wi-Fi", "Bluetooth", "Ethernet", "Zigbee"],
+    "answer": "Bluetooth"
   },
   {
-    "id": 7,
-    "question": "Which symbol is used for classes in CSS?",
-    "options": ["#", ".", "*", "+"],
-    "answer": "."
+    "id": 16,
+    "question": "How many bits make up a single Byte?",
+    "options": ["4", "8", "16", "32"],
+    "answer": "8"
   },
   {
-    "id": 8,
-    "question": "Which HTML element is used to insert an image?",
+    "id": 17,
+    "question": "Sarah's computer runs slow because she opens too many programs at once. Upgrading which component will help most with multitasking?",
+    "options": ["Hard Drive Space", "RAM", "Power Supply", "Monitor"],
+    "answer": "RAM"
+  },
+  {
+    "id": 18,
+    "question": "What does HTTP stand for in web protocols?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "HyperText Technical Process",
+      "High Transfer Text Protocol",
+      "Home Text Transfer Program"
+    ],
+    "answer": "HyperText Transfer Protocol"
+  },
+  {
+    "id": 19,
+    "question": "Which database language is designed specifically for managing and querying relational data?",
+    "options": ["HTML", "SQL", "CSS", "PHP"],
+    "answer": "SQL"
+  },
+  {
+    "id": 20,
+    "question": "Fun Fact: What symbol was chosen by Ray Tomlinson in 1971 to separate username from host in email addresses?",
+    "options": ["#", "&", "@", "/"],
+    "answer": "@"
+  },
+  {
+    "id": 21,
+    "question": "Which non-volatile storage drive uses flash memory and has no moving mechanical parts?",
+    "options": ["HDD", "SSD", "Floppy Disk", "Optical Disc"],
+    "answer": "SSD"
+  },
+  {
+    "id": 22,
+    "question": "Which HTTP status code signifies 'Page Not Found'?",
+    "options": ["200", "301", "404", "500"],
+    "answer": "404"
+  },
+  {
+    "id": 23,
+    "question": "Alex wants to make sure his online banking data is safe from eavesdroppers on public Wi-Fi. What tool should he use?",
+    "options": ["Ad Blocker", "VPN", "Antivirus", "Disk Cleaner"],
+    "answer": "VPN"
+  },
+  {
+    "id": 24,
+    "question": "What is the main function of an operating system?",
+    "options": [
+      "Browse the internet",
+      "Manage hardware and software resources",
+      "Edit photos and videos",
+      "Protect against electrical surges"
+    ],
+    "answer": "Manage hardware and software resources"
+  },
+  {
+    "id": 25,
+    "question": "Fun Fact: What popular coding language was named after a British comedy troupe, not a snake?",
+    "options": ["Cobra", "Python", "Viper", "Anaconda"],
+    "answer": "Python"
+  },
+  {
+    "id": 26,
+    "question": "Which cloud computing model delivers software applications over the internet on a subscription basis?",
+    "options": ["IaaS", "PaaS", "SaaS", "DaaS"],
+    "answer": "SaaS"
+  },
+  {
+    "id": 27,
+    "question": "Which HTML element is used to insert an image into a web page?",
     "options": ["<picture>", "<image>", "<img>", "<src>"],
     "answer": "<img>"
   },
   {
-    "id": 9,
-    "question": "What does CSS stand for?",
-    "options": [
-      "Computer Style Sheets",
-      "Creative Style System",
-      "Cascading Style Sheets",
-      "Colorful Style Sheets"
-    ],
-    "answer": "Cascading Style Sheets"
-  },
-  {
-    "id": 10,
-    "question": "Which HTML tag creates a paragraph?",
-    "options": ["<p>", "<para>", "<text>", "<paragraph>"],
-    "answer": "<p>"
-  },
-  {
-    "id": 11,
-    "question": "Which JavaScript keyword declares a block-scoped variable?",
-    "options": ["var", "let", "const", "both let and const"],
-    "answer": "both let and const"
-  },
-  {
-    "id": 12,
-    "question": "Which HTML tag is used for the largest heading?",
-    "options": ["<h6>", "<h3>", "<h1>", "<head>"],
-    "answer": "<h1>"
-  },
-  {
-    "id": 13,
-    "question": "Which method is used to print a message in the browser console?",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "print()",
-      "echo()"
-    ],
-    "answer": "console.log()"
-  },
-  {
-    "id": 14,
-    "question": "Which CSS property makes text bold?",
-    "options": [
-      "font-weight",
-      "font-style",
-      "text-bold",
-      "weight"
-    ],
-    "answer": "font-weight"
-  },
-  {
-    "id": 15,
-    "question": "Which HTML attribute specifies an image source?",
-    "options": ["href", "src", "link", "path"],
-    "answer": "src"
-  },
-  {
-    "id": 16,
-    "question": "Which HTTP method retrieves data from a server?",
-    "options": ["POST", "PUT", "GET", "DELETE"],
-    "answer": "GET"
-  },
-  {
-    "id": 17,
-    "question": "Which HTTP method is commonly used to submit form data?",
-    "options": ["GET", "POST", "DELETE", "OPTIONS"],
-    "answer": "POST"
-  },
-  {
-    "id": 18,
-    "question": "Which CSS property adds space inside an element's border?",
-    "options": ["margin", "padding", "spacing", "border-space"],
-    "answer": "padding"
-  },
-  {
-    "id": 19,
-    "question": "Which CSS property adds space outside an element's border?",
-    "options": ["padding", "margin", "gap", "spacing"],
-    "answer": "margin"
-  },
-  {
-    "id": 20,
-    "question": "Which HTML tag creates an unordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ul>"
-  },
-  {
-    "id": 21,
-    "question": "Which HTML tag creates an ordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ol>"
-  },
-  {
-    "id": 22,
-    "question": "Which HTML tag represents a list item?",
-    "options": ["<item>", "<li>", "<list>", "<ul>"],
-    "answer": "<li>"
-  },
-  {
-    "id": 23,
-    "question": "Which CSS layout model is one-dimensional?",
-    "options": ["Grid", "Flexbox", "Table", "Float"],
-    "answer": "Flexbox"
-  },
-  {
-    "id": 24,
-    "question": "Which CSS layout model is two-dimensional?",
-    "options": ["Flexbox", "Float", "Grid", "Inline"],
-    "answer": "Grid"
-  },
-  {
-    "id": 25,
-    "question": "Which HTML element contains metadata about the document?",
-    "options": ["<body>", "<head>", "<meta>", "<header>"],
-    "answer": "<head>"
-  },
-  {
-    "id": 26,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Management",
-      "Digital Object Model",
-      "Document Orientation Mode"
-    ],
-    "answer": "Document Object Model"
-  },
-  {
-    "id": 27,
-    "question": "Which JavaScript function displays an alert box?",
-    "options": ["prompt()", "alert()", "confirm()", "console.log()"],
-    "answer": "alert()"
-  },
-  {
     "id": 28,
-    "question": "Which JavaScript operator checks both value and type?",
-    "options": ["==", "=", "===", "!="],
-    "answer": "==="
+    "question": "What protocol secures website communication by encrypting data sent over HTTP?",
+    "options": ["FTP", "HTTPS", "SMTP", "DNS"],
+    "answer": "HTTPS"
   },
   {
     "id": 29,
-    "question": "Which HTML5 element is used for navigation links?",
-    "options": ["<nav>", "<menu>", "<section>", "<aside>"],
-    "answer": "<nav>"
+    "question": "If a file size is 1 Gigabyte (GB), roughly how many Megabytes (MB) does that equal?",
+    "options": ["100 MB", "500 MB", "1,000 MB", "10,000 MB"],
+    "answer": "1,000 MB"
   },
   {
     "id": 30,
-    "question": "Which HTML5 element is commonly used for the main content?",
-    "options": ["<main>", "<content>", "<section>", "<body>"],
-    "answer": "<main>"
+    "question": "Fun Fact: What was the original domain extension created specifically for non-profit organizations?",
+    "options": [".com", ".net", ".org", ".gov"],
+    "answer": ".org"
   },
   {
     "id": 31,
-    "question": "Which CSS property changes the background color?",
-    "options": [
-      "background",
-      "background-color",
-      "bg-color",
-      "color"
-    ],
-    "answer": "background-color"
+    "question": "Which network topology connects every computer to a central hub or switch?",
+    "options": ["Bus Topology", "Ring Topology", "Star Topology", "Mesh Topology"],
+    "answer": "Star Topology"
   },
   {
     "id": 32,
-    "question": "Which JavaScript method converts JSON text into an object?",
+    "question": "Which JavaScript method is used to display output or debug messages in the browser console?",
+    "options": ["console.print()", "console.log()", "print()", "echo()"],
+    "answer": "console.log()"
+  },
+  {
+    "id": 33,
+    "question": "What type of attack involves overwhelming a server with traffic until it crashes?",
+    "options": ["Phishing", "DDoS", "Man-in-the-Middle", "SQL Injection"],
+    "answer": "DDoS"
+  },
+  {
+    "id": 34,
+    "question": "A student receives an email asking them to urgently update their bank details via a suspicious link. What is this attack called?",
+    "options": ["Spoofing", "Phishing", "Ransomware", "Keylogging"],
+    "answer": "Phishing"
+  },
+  {
+    "id": 35,
+    "question": "Fun Fact: What domain name was the very first .com registered on the internet in 1985?",
+    "options": ["google.com", "symbolics.com", "microsoft.com", "apple.com"],
+    "answer": "symbolics.com"
+  },
+  {
+    "id": 36,
+    "question": "What system translates human-friendly domain names (like example.com) into IP addresses?",
+    "options": ["DHCP", "DNS", "NAT", "FTP"],
+    "answer": "DNS"
+  },
+  {
+    "id": 37,
+    "question": "Which CSS layout model provides a 1-dimensional alignment system for items?",
+    "options": ["Grid", "Flexbox", "Float", "Inline"],
+    "answer": "Flexbox"
+  },
+  {
+    "id": 38,
+    "question": "What software security barrier monitors incoming and outgoing network traffic based on predefined rules?",
+    "options": ["Antivirus", "Firewall", "Proxy", "Gateway"],
+    "answer": "Firewall"
+  },
+  {
+    "id": 39,
+    "question": "Which programming concept allows a function or subroutine to call itself?",
+    "options": ["Iteration", "Recursion", "Abstraction", "Inheritance"],
+    "answer": "Recursion"
+  },
+  {
+    "id": 40,
+    "question": "Fun Fact: QWERTY keyboard layouts were originally designed to do what?",
+    "options": [
+      "Help people type faster",
+      "Prevent mechanical typewriter keys from jamming",
+      "Save space on keypads",
+      "Match telegraph codes"
+    ],
+    "answer": "Prevent mechanical typewriter keys from jamming"
+  },
+  {
+    "id": 41,
+    "question": "Which JavaScript keyword declares a variable that cannot be reassigned?",
+    "options": ["var", "let", "const", "static"],
+    "answer": "const"
+  },
+  {
+    "id": 42,
+    "question": "What company developed the Android mobile operating system before Google acquired it?",
+    "options": ["Android Inc.", "Nokia", "Motorola", "Samsung"],
+    "answer": "Android Inc."
+  },
+  {
+    "id": 43,
+    "question": "What open-source version control system was created by Linus Torvalds in 2005?",
+    "options": ["SVN", "Git", "Mercurial", "CVS"],
+    "answer": "Git"
+  },
+  {
+    "id": 44,
+    "question": "David needs to send a large 5 GB file to a colleague across the world. What is the most efficient method?",
+    "options": [
+      "Send as an email attachment",
+      "Upload to cloud storage and share a link",
+      "Copy it to a USB drive and mail it",
+      "Print out the file code"
+    ],
+    "answer": "Upload to cloud storage and share a link"
+  },
+  {
+    "id": 45,
+    "question": "Fun Fact: What was the first video ever uploaded to YouTube in 2005?",
+    "options": ["Me at the zoo", "Charlie bit my finger", "Evolution of Dance", "Hello World"],
+    "answer": "Me at the zoo"
+  },
+  {
+    "id": 46,
+    "question": "Which protocol is responsible for sending outgoing emails across the internet?",
+    "options": ["POP3", "IMAP", "SMTP", "HTTP"],
+    "answer": "SMTP"
+  },
+  {
+    "id": 47,
+    "question": "Which JavaScript method converts a JSON string into a native JavaScript object?",
     "options": [
       "JSON.stringify()",
       "JSON.parse()",
-      "JSON.convert()",
-      "JSON.decode()"
+      "JSON.decode()",
+      "JSON.convert()"
     ],
     "answer": "JSON.parse()"
   },
   {
-    "id": 33,
-    "question": "Which JavaScript method converts an object into a JSON string?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.encode()",
-      "JSON.object()"
-    ],
-    "answer": "JSON.stringify()"
-  },
-  {
-    "id": 34,
-    "question": "Which HTML input type hides typed characters?",
-    "options": ["text", "password", "hidden", "secure"],
-    "answer": "password"
-  },
-  {
-    "id": 35,
-    "question": "Which CSS property controls the display behavior of an element?",
-    "options": ["position", "display", "visibility", "float"],
-    "answer": "display"
-  },
-  {
-    "id": 36,
-    "question": "Which value hides an element but keeps its space in the layout?",
-    "options": [
-      "display: none",
-      "visibility: hidden",
-      "opacity: 0",
-      "position: absolute"
-    ],
-    "answer": "visibility: hidden"
-  },
-  {
-    "id": 37,
-    "question": "Which HTML tag is used to create a table row?",
-    "options": ["<td>", "<tr>", "<th>", "<table>"],
-    "answer": "<tr>"
-  },
-  {
-    "id": 38,
-    "question": "Which HTML tag defines a table cell?",
-    "options": ["<td>", "<tr>", "<th>", "<cell>"],
-    "answer": "<td>"
-  },
-  {
-    "id": 39,
-    "question": "Which HTML tag defines a form?",
-    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
-    "answer": "<form>"
-  },
-  {
-    "id": 40,
-    "question": "Which JavaScript loop is guaranteed to execute at least once?",
-    "options": ["for", "while", "do...while", "for...of"],
-    "answer": "do...while"
-  },
-  {
-    "id": 41,
-    "question": "Which protocol is used to securely browse websites?",
-    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
-    "answer": "HTTPS"
-  },
-  {
-    "id": 42,
-    "question": "Which HTML attribute provides alternative text for an image?",
-    "options": ["title", "alt", "description", "caption"],
-    "answer": "alt"
-  },
-  {
-    "id": 43,
-    "question": "Which CSS property rounds the corners of an element?",
-    "options": [
-      "border-style",
-      "border-radius",
-      "corner-radius",
-      "round"
-    ],
-    "answer": "border-radius"
-  },
-  {
-    "id": 44,
-    "question": "Which JavaScript event occurs when a button is clicked?",
-    "options": ["onhover", "onclick", "onfocus", "onchange"],
-    "answer": "onclick"
-  },
-  {
-    "id": 45,
-    "question": "Which HTML tag embeds JavaScript code?",
-    "options": ["<javascript>", "<script>", "<js>", "<code>"],
-    "answer": "<script>"
-  },
-  {
-    "id": 46,
-    "question": "Which CSS property specifies the stacking order of positioned elements?",
-    "options": ["layer", "stack", "z-index", "order"],
-    "answer": "z-index"
-  },
-  {
-    "id": 47,
-    "question": "Which HTML tag creates a line break?",
-    "options": ["<lb>", "<break>", "<br>", "<hr>"],
-    "answer": "<br>"
-  },
-  {
     "id": 48,
-    "question": "Which HTML tag creates a horizontal rule?",
-    "options": ["<line>", "<rule>", "<hr>", "<br>"],
-    "answer": "<hr>"
+    "question": "What term describes holding and encrypting user files until a payment is demanded?",
+    "options": ["Adware", "Ransomware", "Spyware", "Rootkit"],
+    "answer": "Ransomware"
   },
   {
     "id": 49,
-    "question": "Which JavaScript function asks the user for input?",
-    "options": ["alert()", "confirm()", "prompt()", "input()"],
-    "answer": "prompt()"
+    "question": "Which symbol is used as an ID selector in CSS rules?",
+    "options": [".", "#", "*", "&"],
+    "answer": "#"
   },
   {
     "id": 50,
-    "question": "Which CSS property is used to make a website responsive on different screen sizes?",
-    "options": [
-      "@media",
-      "viewport",
-      "responsive",
-      "display"
-    ],
-    "answer": "@media"
+    "question": "Fun Fact: What was Google's original search engine name back in 1996?",
+    "options": ["BackRub", "GoSearch", "PageRank", "WebCrawler"],
+    "answer": "BackRub"
   }
 ]
