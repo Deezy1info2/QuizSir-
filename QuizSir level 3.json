@@ -1,357 +1,302 @@
 [
   {
     "id": 1,
-    "question": "What does HTML stand for?",
-    "options": [
-      "HyperText Markup Language",
-      "HighText Machine Language",
-      "Hyper Transfer Markup Language",
-      "Home Tool Markup Language"
-    ],
-    "answer": "HyperText Markup Language"
+    "question": "What primary gas do plants absorb from the atmosphere during photosynthesis?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
   },
   {
     "id": 2,
-    "question": "Which HTML tag is used to create a hyperlink?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "What is the center of an atom called?",
+    "options": ["Electron", "Neutron", "Nucleus", "Proton"],
+    "answer": "Nucleus"
   },
   {
     "id": 3,
-    "question": "Which CSS property changes the text color?",
-    "options": ["font-color", "color", "text-color", "foreground"],
-    "answer": "color"
+    "question": "Which planet in our solar system has the most prominent ring system?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "answer": "Saturn"
   },
   {
     "id": 4,
-    "question": "Which CSS property controls the size of text?",
-    "options": ["font-style", "font-size", "text-size", "size"],
-    "answer": "font-size"
+    "question": "What is the study of living organisms called?",
+    "options": ["Geology", "Physics", "Biology", "Astronomy"],
+    "answer": "Biology"
   },
   {
     "id": 5,
-    "question": "Which language is primarily used for web page interactivity?",
-    "options": ["Python", "Java", "JavaScript", "PHP"],
-    "answer": "JavaScript"
+    "question": "Fun Fact: Lightning bolts can reach temperatures almost five times hotter than what?",
+    "options": ["The surface of the Sun", "A volcano's lava", "Boiling water", "A rocket engine"],
+    "answer": "The surface of the Sun"
   },
   {
     "id": 6,
-    "question": "Which symbol is used for IDs in CSS?",
-    "options": [".", "#", "*", "&"],
-    "answer": "#"
+    "question": "Which particles inside an atom carry a negative electrical charge?",
+    "options": ["Protons", "Neutrons", "Electrons", "Quarks"],
+    "answer": "Electrons"
   },
   {
     "id": 7,
-    "question": "Which symbol is used for classes in CSS?",
-    "options": ["#", ".", "*", "+"],
-    "answer": "."
+    "question": "What is the chemical formula for pure water?",
+    "options": ["CO2", "H2O", "NaCl", "O2"],
+    "answer": "H2O"
   },
   {
     "id": 8,
-    "question": "Which HTML element is used to insert an image?",
-    "options": ["<picture>", "<image>", "<img>", "<src>"],
-    "answer": "<img>"
+    "question": "Which organ in the human body is responsible for pumping blood throughout the circulatory system?",
+    "options": ["Lungs", "Brain", "Liver", "Heart"],
+    "answer": "Heart"
   },
   {
     "id": 9,
-    "question": "What does CSS stand for?",
-    "options": [
-      "Computer Style Sheets",
-      "Creative Style System",
-      "Cascading Style Sheets",
-      "Colorful Style Sheets"
-    ],
-    "answer": "Cascading Style Sheets"
+    "question": "What force pulls dropped objects toward the center of the Earth?",
+    "options": ["Magnetism", "Gravity", "Friction", "Tension"],
+    "answer": "Gravity"
   },
   {
     "id": 10,
-    "question": "Which HTML tag creates a paragraph?",
-    "options": ["<p>", "<para>", "<text>", "<paragraph>"],
-    "answer": "<p>"
+    "question": "Fun Fact: Hot water can sometimes freeze faster than cold water. What is this phenomenon called?",
+    "options": ["The Mpemba Effect", "Thermal Conduction", "Sublimation", "The Joule Effect"],
+    "answer": "The Mpemba Effect"
   },
   {
     "id": 11,
-    "question": "Which JavaScript keyword declares a block-scoped variable?",
-    "options": ["var", "let", "const", "both let and const"],
-    "answer": "both let and const"
+    "question": "What is the process called when a liquid transforms into a gas?",
+    "options": ["Condensation", "Evaporation", "Freezing", "Deposition"],
+    "answer": "Evaporation"
   },
   {
     "id": 12,
-    "question": "Which HTML tag is used for the largest heading?",
-    "options": ["<h6>", "<h3>", "<h1>", "<head>"],
-    "answer": "<h1>"
+    "question": "Which type of blood cell helps the body fight off infections and diseases?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "answer": "White blood cells"
   },
   {
     "id": 13,
-    "question": "Which method is used to print a message in the browser console?",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "print()",
-      "echo()"
-    ],
-    "answer": "console.log()"
+    "question": "What is the speed of light in a vacuum approximately?",
+    "options": ["300,000 km/s", "150,000 km/s", "1,000,000 km/s", "30,000 km/s"],
+    "answer": "300,000 km/s"
   },
   {
     "id": 14,
-    "question": "Which CSS property makes text bold?",
-    "options": [
-      "font-weight",
-      "font-style",
-      "text-bold",
-      "weight"
-    ],
-    "answer": "font-weight"
+    "question": "Which layer of the Earth lies directly beneath the outer crust?",
+    "options": ["Inner Core", "Outer Core", "Mantle", "Lithosphere"],
+    "answer": "Mantle"
   },
   {
     "id": 15,
-    "question": "Which HTML attribute specifies an image source?",
-    "options": ["href", "src", "link", "path"],
-    "answer": "src"
+    "question": "Fun Fact: What is the only planet in our solar system that spins clockwise on its axis?",
+    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
+    "answer": "Venus"
   },
   {
     "id": 16,
-    "question": "Which HTTP method retrieves data from a server?",
-    "options": ["POST", "PUT", "GET", "DELETE"],
-    "answer": "GET"
+    "question": "What green pigment gives plants their color and absorbs light energy for photosynthesis?",
+    "options": ["Carotene", "Chlorophyll", "Hemoglobin", "Melanin"],
+    "answer": "Chlorophyll"
   },
   {
     "id": 17,
-    "question": "Which HTTP method is commonly used to submit form data?",
-    "options": ["GET", "POST", "DELETE", "OPTIONS"],
-    "answer": "POST"
+    "question": "What scale measures the acidity or alkalinity of a liquid solution?",
+    "options": ["pH Scale", "Richter Scale", "Kelvin Scale", "Beaufort Scale"],
+    "answer": "pH Scale"
   },
   {
     "id": 18,
-    "question": "Which CSS property adds space inside an element's border?",
-    "options": ["margin", "padding", "spacing", "border-space"],
-    "answer": "padding"
+    "question": "What is the common term for solid water?",
+    "options": ["Steam", "Plasma", "Ice", "Vapor"],
+    "answer": "Ice"
   },
   {
     "id": 19,
-    "question": "Which CSS property adds space outside an element's border?",
-    "options": ["padding", "margin", "gap", "spacing"],
-    "answer": "margin"
+    "question": "Which unit is used to measure electrical current?",
+    "options": ["Volt", "Ampere", "Watt", "Ohm"],
+    "answer": "Ampere"
   },
   {
     "id": 20,
-    "question": "Which HTML tag creates an unordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ul>"
+    "question": "Fun Fact: What natural space phenomenon has a gravitational pull so strong that even light cannot escape?",
+    "options": ["Supernova", "Black Hole", "Neutron Star", "Red Giant"],
+    "answer": "Black Hole"
   },
   {
     "id": 21,
-    "question": "Which HTML tag creates an ordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ol>"
+    "question": "What is the basic functional unit of all living organisms?",
+    "options": ["Tissue", "Organ", "Cell", "Molecule"],
+    "answer": "Cell"
   },
   {
     "id": 22,
-    "question": "Which HTML tag represents a list item?",
-    "options": ["<item>", "<li>", "<list>", "<ul>"],
-    "answer": "<li>"
+    "question": "Which element makes up the majority of Earth's atmosphere (~78%)?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+    "answer": "Nitrogen"
   },
   {
     "id": 23,
-    "question": "Which CSS layout model is one-dimensional?",
-    "options": ["Grid", "Flexbox", "Table", "Float"],
-    "answer": "Flexbox"
+    "question": "What kind of energy is stored in an object due to its position or state?",
+    "options": ["Kinetic Energy", "Potential Energy", "Thermal Energy", "Sound Energy"],
+    "answer": "Potential Energy"
   },
   {
     "id": 24,
-    "question": "Which CSS layout model is two-dimensional?",
-    "options": ["Flexbox", "Float", "Grid", "Inline"],
-    "answer": "Grid"
+    "question": "What scientific instrument is used to view objects that are too small to be seen with the naked eye?",
+    "options": ["Telescope", "Periscope", "Microscope", "Barometer"],
+    "answer": "Microscope"
   },
   {
     "id": 25,
-    "question": "Which HTML element contains metadata about the document?",
-    "options": ["<body>", "<head>", "<meta>", "<header>"],
-    "answer": "<head>"
+    "question": "Fun Fact: Sound travels much faster through which phase of matter compared to air?",
+    "options": ["Gases", "Solids", "Vacuum", "Plasma"],
+    "answer": "Solids"
   },
   {
     "id": 26,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Management",
-      "Digital Object Model",
-      "Document Orientation Mode"
-    ],
-    "answer": "Document Object Model"
+    "question": "Which law states that for every action, there is an equal and opposite reaction?",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
+    "answer": "Newton's Third Law"
   },
   {
     "id": 27,
-    "question": "Which JavaScript function displays an alert box?",
-    "options": ["prompt()", "alert()", "confirm()", "console.log()"],
-    "answer": "alert()"
+    "question": "What is the term for animals that eat both plants and meat?",
+    "options": ["Herbivores", "Carnivores", "Omnivores", "Insectivores"],
+    "answer": "Omnivores"
   },
   {
     "id": 28,
-    "question": "Which JavaScript operator checks both value and type?",
-    "options": ["==", "=", "===", "!="],
-    "answer": "==="
+    "question": "What type of rock is formed from cooling magma or lava?",
+    "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossiliferous"],
+    "answer": "Igneous"
   },
   {
     "id": 29,
-    "question": "Which HTML5 element is used for navigation links?",
-    "options": ["<nav>", "<menu>", "<section>", "<aside>"],
-    "answer": "<nav>"
+    "question": "Which macromolecule carries genetic instructions used in growth and development?",
+    "options": ["RNA", "DNA", "ATP", "Lipids"],
+    "answer": "DNA"
   },
   {
     "id": 30,
-    "question": "Which HTML5 element is commonly used for the main content?",
-    "options": ["<main>", "<content>", "<section>", "<body>"],
-    "answer": "<main>"
+    "question": "Fun Fact: What is the only metal that remains liquid at room temperature?",
+    "options": ["Gallium", "Mercury", "Lead", "Tin"],
+    "answer": "Mercury"
   },
   {
     "id": 31,
-    "question": "Which CSS property changes the background color?",
-    "options": [
-      "background",
-      "background-color",
-      "bg-color",
-      "color"
-    ],
-    "answer": "background-color"
+    "question": "What process involves a caterpillar changing into a butterfly inside a chrysalis?",
+    "options": ["Evolution", "Metamorphosis", "Germination", "Mitosis"],
+    "answer": "Metamorphosis"
   },
   {
     "id": 32,
-    "question": "Which JavaScript method converts JSON text into an object?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.convert()",
-      "JSON.decode()"
-    ],
-    "answer": "JSON.parse()"
+    "question": "What is absolute zero in degrees Celsius?",
+    "options": ["0 °C", "-100 °C", "-273.15 °C", "-459.67 °C"],
+    "answer": "-273.15 °C"
   },
   {
     "id": 33,
-    "question": "Which JavaScript method converts an object into a JSON string?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.encode()",
-      "JSON.object()"
-    ],
-    "answer": "JSON.stringify()"
+    "question": "Which organ systems filters waste products out of human blood to produce urine?",
+    "options": ["Digestive System", "Excretory/Urinary System", "Respiratory System", "Nervous System"],
+    "answer": "Excretory/Urinary System"
   },
   {
     "id": 34,
-    "question": "Which HTML input type hides typed characters?",
-    "options": ["text", "password", "hidden", "secure"],
-    "answer": "password"
+    "question": "What scientific term describes the gradual change in species over generations?",
+    "options": ["Adaptation", "Evolution", "Mutation", "Selection"],
+    "answer": "Evolution"
   },
   {
     "id": 35,
-    "question": "Which CSS property controls the display behavior of an element?",
-    "options": ["position", "display", "visibility", "float"],
-    "answer": "display"
+    "question": "Fun Fact: How long does it take for light from the Sun to reach Earth?",
+    "options": ["8 seconds", "8 minutes", "8 hours", "8 days"],
+    "answer": "8 minutes"
   },
   {
     "id": 36,
-    "question": "Which value hides an element but keeps its space in the layout?",
-    "options": [
-      "display: none",
-      "visibility: hidden",
-      "opacity: 0",
-      "position: absolute"
-    ],
-    "answer": "visibility: hidden"
+    "question": "Which gland in the human body regulates metabolism and growth?",
+    "options": ["Thyroid Gland", "Adrenal Gland", "Pancreas", "Spleen"],
+    "answer": "Thyroid Gland"
   },
   {
     "id": 37,
-    "question": "Which HTML tag is used to create a table row?",
-    "options": ["<td>", "<tr>", "<th>", "<table>"],
-    "answer": "<tr>"
+    "question": "What is the measure of disorder or randomness in a closed system?",
+    "options": ["Enthalpy", "Entropy", "Viscosity", "Inertia"],
+    "answer": "Entropy"
   },
   {
     "id": 38,
-    "question": "Which HTML tag defines a table cell?",
-    "options": ["<td>", "<tr>", "<th>", "<cell>"],
-    "answer": "<td>"
+    "question": "What type of lens curves inward and causes light rays to diverge?",
+    "options": ["Convex lens", "Concave lens", "Flat lens", "Prism"],
+    "answer": "Concave lens"
   },
   {
     "id": 39,
-    "question": "Which HTML tag defines a form?",
-    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
-    "answer": "<form>"
+    "question": "Which organelle is widely known as the power plant or powerhouse of the eukaryotic cell?",
+    "options": ["Ribosome", "Nucleus", "Mitochondrion", "Golgi apparatus"],
+    "answer": "Mitochondrion"
   },
   {
     "id": 40,
-    "question": "Which JavaScript loop is guaranteed to execute at least once?",
-    "options": ["for", "while", "do...while", "for...of"],
-    "answer": "do...while"
+    "question": "Fun Fact: What is the rarest naturally occurring element on Earth's crust?",
+    "options": ["Astatine", "Francium", "Uranium", "Platinum"],
+    "answer": "Astatine"
   },
   {
     "id": 41,
-    "question": "Which protocol is used to securely browse websites?",
-    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
-    "answer": "HTTPS"
+    "question": "What is the bending of light as it passes from one medium to another called?",
+    "options": ["Reflection", "Refraction", "Diffraction", "Dispersion"],
+    "answer": "Refraction"
   },
   {
     "id": 42,
-    "question": "Which HTML attribute provides alternative text for an image?",
-    "options": ["title", "alt", "description", "caption"],
-    "answer": "alt"
+    "question": "Which element has the atomic number 1 on the periodic table?",
+    "options": ["Helium", "Hydrogen", "Lithium", "Carbon"],
+    "answer": "Hydrogen"
   },
   {
     "id": 43,
-    "question": "Which CSS property rounds the corners of an element?",
-    "options": [
-      "border-style",
-      "border-radius",
-      "corner-radius",
-      "round"
-    ],
-    "answer": "border-radius"
+    "question": "What is the study of weather and atmospheric conditions called?",
+    "options": ["Geology", "Meteorology", "Astrophysics", "Oceanography"],
+    "answer": "Meteorology"
   },
   {
     "id": 44,
-    "question": "Which JavaScript event occurs when a button is clicked?",
-    "options": ["onhover", "onclick", "onfocus", "onchange"],
-    "answer": "onclick"
+    "question": "Which type of star is created when a massive star exhausts its fuel and explodes?",
+    "options": ["Red Dwarf", "White Dwarf", "Supernova", "Protostar"],
+    "answer": "Supernova"
   },
   {
     "id": 45,
-    "question": "Which HTML tag embeds JavaScript code?",
-    "options": ["<javascript>", "<script>", "<js>", "<code>"],
-    "answer": "<script>"
+    "question": "Fun Fact: Glass is not technically a traditional solid. What state of matter structure does it have?",
+    "options": ["Amorphous solid", "Crystalline solid", "Dense liquid", "Supercooled gas"],
+    "answer": "Amorphous solid"
   },
   {
     "id": 46,
-    "question": "Which CSS property specifies the stacking order of positioned elements?",
-    "options": ["layer", "stack", "z-index", "order"],
-    "answer": "z-index"
+    "question": "What type of bond forms when electrons are shared between two atoms?",
+    "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Metallic bond"],
+    "answer": "Covalent bond"
   },
   {
     "id": 47,
-    "question": "Which HTML tag creates a line break?",
-    "options": ["<lb>", "<break>", "<br>", "<hr>"],
-    "answer": "<br>"
+    "question": "What is the largest organ of the human body?",
+    "options": ["Liver", "Brain", "Skin", "Small Intestine"],
+    "answer": "Skin"
   },
   {
     "id": 48,
-    "question": "Which HTML tag creates a horizontal rule?",
-    "options": ["<line>", "<rule>", "<hr>", "<br>"],
-    "answer": "<hr>"
+    "question": "What is the process called where solid converts directly into gas without becoming liquid first?",
+    "options": ["Sublimation", "Evaporation", "Condensation", "Deposition"],
+    "answer": "Sublimation"
   },
   {
     "id": 49,
-    "question": "Which JavaScript function asks the user for input?",
-    "options": ["alert()", "confirm()", "prompt()", "input()"],
-    "answer": "prompt()"
+    "question": "Which force opposes relative motion between two surfaces in contact?",
+    "options": ["Tension", "Friction", "Gravity", "Buoyancy"],
+    "answer": "Friction"
   },
   {
     "id": 50,
-    "question": "Which CSS property is used to make a website responsive on different screen sizes?",
-    "options": [
-      "@media",
-      "viewport",
-      "responsive",
-      "display"
-    ],
-    "answer": "@media"
+    "question": "Fun Fact: Which planet in our solar system could theoretically float on water because its density is lower than water?",
+    "options": ["Uranus", "Jupiter", "Saturn", "Neptune"],
+    "answer": "Saturn"
   }
 ]
