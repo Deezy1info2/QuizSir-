@@ -1,357 +1,302 @@
 [
   {
     "id": 1,
-    "question": "What does HTML stand for?",
-    "options": [
-      "HyperText Markup Language",
-      "HighText Machine Language",
-      "Hyper Transfer Markup Language",
-      "Home Tool Markup Language"
-    ],
-    "answer": "HyperText Markup Language"
+    "question": "What is the result of adding 15 and 27?",
+    "options": ["32", "42", "45", "52"],
+    "answer": "42"
   },
   {
     "id": 2,
-    "question": "Which HTML tag is used to create a hyperlink?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "Maya has 5 bags of apples. Each bag contains 6 apples. How many apples does Maya have in total?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30"
   },
   {
     "id": 3,
-    "question": "Which CSS property changes the text color?",
-    "options": ["font-color", "color", "text-color", "foreground"],
-    "answer": "color"
+    "question": "How many degrees are in a right angle?",
+    "options": ["45°", "90°", "180°", "360°"],
+    "answer": "90°"
   },
   {
     "id": 4,
-    "question": "Which CSS property controls the size of text?",
-    "options": ["font-style", "font-size", "text-size", "size"],
-    "answer": "font-size"
+    "question": "A book costs $12. If Alex pays with a $20 bill, how much change should Alex receive?",
+    "options": ["$6", "$8", "$10", "$12"],
+    "answer": "$8"
   },
   {
     "id": 5,
-    "question": "Which language is primarily used for web page interactivity?",
-    "options": ["Python", "Java", "JavaScript", "PHP"],
-    "answer": "JavaScript"
+    "question": "Fun Fact: What is the only even prime number?",
+    "options": ["0", "2", "4", "6"],
+    "answer": "2"
   },
   {
     "id": 6,
-    "question": "Which symbol is used for IDs in CSS?",
-    "options": [".", "#", "*", "&"],
-    "answer": "#"
+    "question": "What is 8 multiplied by 7?",
+    "options": ["54", "56", "62", "64"],
+    "answer": "56"
   },
   {
     "id": 7,
-    "question": "Which symbol is used for classes in CSS?",
-    "options": ["#", ".", "*", "+"],
-    "answer": "."
+    "question": "What is the sum of angles inside a triangle?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": "180°"
   },
   {
     "id": 8,
-    "question": "Which HTML element is used to insert an image?",
-    "options": ["<picture>", "<image>", "<img>", "<src>"],
-    "answer": "<img>"
+    "question": "Sam bought 24 cupcakes to share equally among 6 friends. How many cupcakes does each friend get?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
   },
   {
     "id": 9,
-    "question": "What does CSS stand for?",
-    "options": [
-      "Computer Style Sheets",
-      "Creative Style System",
-      "Cascading Style Sheets",
-      "Colorful Style Sheets"
-    ],
-    "answer": "Cascading Style Sheets"
+    "question": "What is the square root of 81?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "9"
   },
   {
     "id": 10,
-    "question": "Which HTML tag creates a paragraph?",
-    "options": ["<p>", "<para>", "<text>", "<paragraph>"],
-    "answer": "<p>"
+    "question": "Fun Fact: What is the Roman numeral for the number 1,000?",
+    "options": ["C", "D", "L", "M"],
+    "answer": "M"
   },
   {
     "id": 11,
-    "question": "Which JavaScript keyword declares a block-scoped variable?",
-    "options": ["var", "let", "const", "both let and const"],
-    "answer": "both let and const"
+    "question": "A movie starts at 2:15 PM and lasts for 1 hour and 45 minutes. What time does the movie end?",
+    "options": ["3:45 PM", "4:00 PM", "4:15 PM", "4:30 PM"],
+    "answer": "4:00 PM"
   },
   {
     "id": 12,
-    "question": "Which HTML tag is used for the largest heading?",
-    "options": ["<h6>", "<h3>", "<h1>", "<head>"],
-    "answer": "<h1>"
+    "question": "What is the value of Pi (π) rounded to two decimal places?",
+    "options": ["3.12", "3.14", "3.16", "3.18"],
+    "answer": "3.14"
   },
   {
     "id": 13,
-    "question": "Which method is used to print a message in the browser console?",
-    "options": [
-      "console.write()",
-      "console.log()",
-      "print()",
-      "echo()"
-    ],
-    "answer": "console.log()"
+    "question": "In the equation x + 5 = 12, what is the value of x?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
   },
   {
     "id": 14,
-    "question": "Which CSS property makes text bold?",
-    "options": [
-      "font-weight",
-      "font-style",
-      "text-bold",
-      "weight"
-    ],
-    "answer": "font-weight"
+    "question": "A farmer has 18 cows and buys 15 more. How many cows does the farmer have now?",
+    "options": ["30", "31", "33", "35"],
+    "answer": "33"
   },
   {
     "id": 15,
-    "question": "Which HTML attribute specifies an image source?",
-    "options": ["href", "src", "link", "path"],
-    "answer": "src"
+    "question": "Fun Fact: Which number is the only number spelled with its letters in alphabetical order?",
+    "options": ["ONE", "FOUR", "FORTY", "SIX"],
+    "answer": "FORTY"
   },
   {
     "id": 16,
-    "question": "Which HTTP method retrieves data from a server?",
-    "options": ["POST", "PUT", "GET", "DELETE"],
-    "answer": "GET"
+    "question": "What is 15% of 200?",
+    "options": ["15", "20", "25", "30"],
+    "answer": "30"
   },
   {
     "id": 17,
-    "question": "Which HTTP method is commonly used to submit form data?",
-    "options": ["GET", "POST", "DELETE", "OPTIONS"],
-    "answer": "POST"
+    "question": "Sarah baked 36 cookies. She ate 4 and gave half of the rest to her neighbor. How many cookies did she give away?",
+    "options": ["14", "16", "18", "20"],
+    "answer": "16"
   },
   {
     "id": 18,
-    "question": "Which CSS property adds space inside an element's border?",
-    "options": ["margin", "padding", "spacing", "border-space"],
-    "answer": "padding"
+    "question": "What is the product of 12 and 12?",
+    "options": ["120", "132", "144", "156"],
+    "answer": "144"
   },
   {
     "id": 19,
-    "question": "Which CSS property adds space outside an element's border?",
-    "options": ["padding", "margin", "gap", "spacing"],
-    "answer": "margin"
+    "question": "What shape has no corners or straight edges?",
+    "options": ["Triangle", "Square", "Circle", "Pentagon"],
+    "answer": "Circle"
   },
   {
     "id": 20,
-    "question": "Which HTML tag creates an unordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ul>"
+    "question": "Fun Fact: What famous sequence starts with 0, 1, 1, 2, 3, 5, 8, where each number is the sum of the two preceding ones?",
+    "options": ["Pascal's Triangle", "Fibonacci Sequence", "Euler's Series", "Prime Progression"],
+    "answer": "Fibonacci Sequence"
   },
   {
     "id": 21,
-    "question": "Which HTML tag creates an ordered list?",
-    "options": ["<ol>", "<ul>", "<li>", "<list>"],
-    "answer": "<ol>"
+    "question": "A bus travels at a constant speed of 60 km/h. How far will it travel in 3 hours?",
+    "options": ["120 km", "150 km", "180 km", "200 km"],
+    "answer": "180 km"
   },
   {
     "id": 22,
-    "question": "Which HTML tag represents a list item?",
-    "options": ["<item>", "<li>", "<list>", "<ul>"],
-    "answer": "<li>"
+    "question": "What is the mean (average) of the numbers 4, 8, and 12?",
+    "options": ["6", "8", "10", "12"],
+    "answer": "8"
   },
   {
     "id": 23,
-    "question": "Which CSS layout model is one-dimensional?",
-    "options": ["Grid", "Flexbox", "Table", "Float"],
-    "answer": "Flexbox"
+    "question": "Leo saved $5 every week for 8 weeks. He then bought a toy for $25. How much money does he have left?",
+    "options": ["$10", "$15", "$20", "$25"],
+    "answer": "$15"
   },
   {
     "id": 24,
-    "question": "Which CSS layout model is two-dimensional?",
-    "options": ["Flexbox", "Float", "Grid", "Inline"],
-    "answer": "Grid"
+    "question": "What is the formula for the area of a rectangle?",
+    "options": ["Length + Width", "2 × (Length + Width)", "Length × Width", "Length ÷ Width"],
+    "answer": "Length × Width"
   },
   {
     "id": 25,
-    "question": "Which HTML element contains metadata about the document?",
-    "options": ["<body>", "<head>", "<meta>", "<header>"],
-    "answer": "<head>"
+    "question": "Fun Fact: Every odd number in English contains which letter?",
+    "options": ["A", "E", "I", "O"],
+    "answer": "E"
   },
   {
     "id": 26,
-    "question": "What does DOM stand for?",
-    "options": [
-      "Document Object Model",
-      "Data Object Management",
-      "Digital Object Model",
-      "Document Orientation Mode"
-    ],
-    "answer": "Document Object Model"
+    "question": "If a pizza is cut into 8 equal slices and you eat 3 slices, what fraction of the pizza is left?",
+    "options": ["3/8", "4/8", "5/8", "6/8"],
+    "answer": "5/8"
   },
   {
     "id": 27,
-    "question": "Which JavaScript function displays an alert box?",
-    "options": ["prompt()", "alert()", "confirm()", "console.log()"],
-    "answer": "alert()"
+    "question": "What is the term for an angle that measures greater than 90° but less than 180°?",
+    "options": ["Acute angle", "Obtuse angle", "Reflex angle", "Straight angle"],
+    "answer": "Obtuse angle"
   },
   {
     "id": 28,
-    "question": "Which JavaScript operator checks both value and type?",
-    "options": ["==", "=", "===", "!="],
-    "answer": "==="
+    "question": "What is 50 subtracted from 135?",
+    "options": ["75", "85", "95", "105"],
+    "answer": "85"
   },
   {
     "id": 29,
-    "question": "Which HTML5 element is used for navigation links?",
-    "options": ["<nav>", "<menu>", "<section>", "<aside>"],
-    "answer": "<nav>"
+    "question": "A garden bed is 4 meters long and 3 meters wide. What is its total area in square meters?",
+    "options": ["7 m²", "12 m²", "14 m²", "16 m²"],
+    "answer": "12 m²"
   },
   {
     "id": 30,
-    "question": "Which HTML5 element is commonly used for the main content?",
-    "options": ["<main>", "<content>", "<section>", "<body>"],
-    "answer": "<main>"
+    "question": "Fun Fact: What is the special name given to a polygon with 10 sides?",
+    "options": ["Nonagon", "Decagon", "Dodecagon", "Icosagon"],
+    "answer": "Decagon"
   },
   {
     "id": 31,
-    "question": "Which CSS property changes the background color?",
-    "options": [
-      "background",
-      "background-color",
-      "bg-color",
-      "color"
-    ],
-    "answer": "background-color"
+    "question": "What is the absolute value of -15?",
+    "options": ["-15", "0", "15", "1/15"],
+    "answer": "15"
   },
   {
     "id": 32,
-    "question": "Which JavaScript method converts JSON text into an object?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.convert()",
-      "JSON.decode()"
-    ],
-    "answer": "JSON.parse()"
+    "question": "Tom is 4 years older than Jerry. If Jerry is 12 years old, how old is Tom?",
+    "options": ["8", "14", "16", "18"],
+    "answer": "16"
   },
   {
     "id": 33,
-    "question": "Which JavaScript method converts an object into a JSON string?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.encode()",
-      "JSON.object()"
-    ],
-    "answer": "JSON.stringify()"
+    "question": "What do we call a 3D shape where all six faces are congruent squares?",
+    "options": ["Sphere", "Pyramid", "Cube", "Cylinder"],
+    "answer": "Cube"
   },
   {
     "id": 34,
-    "question": "Which HTML input type hides typed characters?",
-    "options": ["text", "password", "hidden", "secure"],
-    "answer": "password"
+    "question": "A store offers a 20% discount on a $50 jacket. How much money do you save?",
+    "options": ["$5", "$10", "$15", "$20"],
+    "answer": "$10"
   },
   {
     "id": 35,
-    "question": "Which CSS property controls the display behavior of an element?",
-    "options": ["position", "display", "visibility", "float"],
-    "answer": "display"
+    "question": "Fun Fact: What digit does not exist in Roman numerals?",
+    "options": ["0", "1", "5", "10"],
+    "answer": "0"
   },
   {
     "id": 36,
-    "question": "Which value hides an element but keeps its space in the layout?",
-    "options": [
-      "display: none",
-      "visibility: hidden",
-      "opacity: 0",
-      "position: absolute"
-    ],
-    "answer": "visibility: hidden"
+    "question": "What is the value of 5 factorial (5!)?",
+    "options": ["20", "60", "120", "720"],
+    "answer": "120"
   },
   {
     "id": 37,
-    "question": "Which HTML tag is used to create a table row?",
-    "options": ["<td>", "<tr>", "<th>", "<table>"],
-    "answer": "<tr>"
+    "question": "If you flip a fair coin, what is the probability of getting heads?",
+    "options": ["1/4", "1/3", "1/2", "1"],
+    "answer": "1/2"
   },
   {
     "id": 38,
-    "question": "Which HTML tag defines a table cell?",
-    "options": ["<td>", "<tr>", "<th>", "<cell>"],
-    "answer": "<td>"
+    "question": "An elevator starts on the 5th floor, goes up 6 floors, and then goes down 3 floors. What floor is it on now?",
+    "options": ["6th floor", "7th floor", "8th floor", "9th floor"],
+    "answer": "8th floor"
   },
   {
     "id": 39,
-    "question": "Which HTML tag defines a form?",
-    "options": ["<form>", "<input>", "<fieldset>", "<label>"],
-    "answer": "<form>"
+    "question": "What theorem states that a² + b² = c² for right-angled triangles?",
+    "options": ["Euclid's Theorem", "Pythagorean Theorem", "Fermat's Theorem", "Binomial Theorem"],
+    "answer": "Pythagorean Theorem"
   },
   {
     "id": 40,
-    "question": "Which JavaScript loop is guaranteed to execute at least once?",
-    "options": ["for", "while", "do...while", "for...of"],
-    "answer": "do...while"
+    "question": "Fun Fact: What is the word 'googol' equal to?",
+    "options": ["1 followed by 10 zeros", "1 followed by 100 zeros", "1 followed by 1,000 zeros", "1 million billions"],
+    "answer": "1 followed by 100 zeros"
   },
   {
     "id": 41,
-    "question": "Which protocol is used to securely browse websites?",
-    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
-    "answer": "HTTPS"
+    "question": "What is the median of the data set: 3, 7, 9, 12, 15?",
+    "options": ["7", "9", "9.2", "12"],
+    "answer": "9"
   },
   {
     "id": 42,
-    "question": "Which HTML attribute provides alternative text for an image?",
-    "options": ["title", "alt", "description", "caption"],
-    "answer": "alt"
+    "question": "A classroom has 12 boys and 15 girls. What is the total number of students in the class?",
+    "options": ["25", "27", "28", "30"],
+    "answer": "27"
   },
   {
     "id": 43,
-    "question": "Which CSS property rounds the corners of an element?",
-    "options": [
-      "border-style",
-      "border-radius",
-      "corner-radius",
-      "round"
-    ],
-    "answer": "border-radius"
+    "question": "What branch of mathematics uses letters and symbols to represent numbers in equations?",
+    "options": ["Arithmetic", "Geometry", "Algebra", "Calculus"],
+    "answer": "Algebra"
   },
   {
     "id": 44,
-    "question": "Which JavaScript event occurs when a button is clicked?",
-    "options": ["onhover", "onclick", "onfocus", "onchange"],
-    "answer": "onclick"
+    "question": "If 3 identical pencils cost $6, how much do 5 of those pencils cost?",
+    "options": ["$8", "$10", "$12", "$15"],
+    "answer": "$10"
   },
   {
     "id": 45,
-    "question": "Which HTML tag embeds JavaScript code?",
-    "options": ["<javascript>", "<script>", "<js>", "<code>"],
-    "answer": "<script>"
+    "question": "Fun Fact: What is a shape called that has infinitely many lines of symmetry?",
+    "options": ["Square", "Circle", "Sphere", "Oval"],
+    "answer": "Circle"
   },
   {
     "id": 46,
-    "question": "Which CSS property specifies the stacking order of positioned elements?",
-    "options": ["layer", "stack", "z-index", "order"],
-    "answer": "z-index"
+    "question": "What is the result of multiplying any number by 1?",
+    "options": ["0", "1", "The same number", "Double the number"],
+    "answer": "The same number"
   },
   {
     "id": 47,
-    "question": "Which HTML tag creates a line break?",
-    "options": ["<lb>", "<break>", "<br>", "<hr>"],
-    "answer": "<br>"
+    "question": "A train left the station with 100 passengers. At the first stop, 15 people got off and 20 got on. How many passengers are on the train now?",
+    "options": ["95", "100", "105", "110"],
+    "answer": "105"
   },
   {
     "id": 48,
-    "question": "Which HTML tag creates a horizontal rule?",
-    "options": ["<line>", "<rule>", "<hr>", "<br>"],
-    "answer": "<hr>"
+    "question": "How many seconds are in 1 hour?",
+    "options": ["60", "600", "1,800", "3,600"],
+    "answer": "3,600"
   },
   {
     "id": 49,
-    "question": "Which JavaScript function asks the user for input?",
-    "options": ["alert()", "confirm()", "prompt()", "input()"],
-    "answer": "prompt()"
+    "question": "What is the mode of the numbers: 2, 4, 4, 6, 8, 4, 9?",
+    "options": ["2", "4", "5.3", "6"],
+    "answer": "4"
   },
   {
     "id": 50,
-    "question": "Which CSS property is used to make a website responsive on different screen sizes?",
-    "options": [
-      "@media",
-      "viewport",
-      "responsive",
-      "display"
-    ],
-    "answer": "@media"
+    "question": "Fun Fact: What is the sum of the numbers on opposite sides of a standard 6-sided die?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
   }
 ]
